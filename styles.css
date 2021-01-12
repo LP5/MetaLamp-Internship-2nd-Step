@@ -1,0 +1,15 @@
+:root {
+  --dark-shade: #1F2041;
+  --purple: #BC9CFF;
+  --green: #6FCF97;
+}
+
+.square {
+  border: 2px dashed red;
+  height: 5em;
+  width: 5em;
+}
+
+.dark-shade {background-color: var(--dark-shade)}
+.purple {background-color: var(--purple)}
+.green {background-color: var(--green)}
