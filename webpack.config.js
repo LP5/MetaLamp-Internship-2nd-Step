@@ -18,7 +18,7 @@ const webpack = require('webpack');
  */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const PrettierPlugin = require("prettier-webpack-plugin");
 
 
 
@@ -52,7 +52,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   mode: 'production',
 
-  plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
+  plugins: [new PrettierPlugin(), new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
             template: './src/index.pug'
           }), new workboxPlugin.GenerateSW({
           swDest: 'sw.js',
