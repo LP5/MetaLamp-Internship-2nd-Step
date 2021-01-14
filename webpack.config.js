@@ -71,6 +71,17 @@ module.exports = {
               pretty: true
             }
           }
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates 'style' nodes from JS stings
+          "style-lodaer",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Complies SASS into CSS
+          "sass-loader"
         ]
       },
     ]
