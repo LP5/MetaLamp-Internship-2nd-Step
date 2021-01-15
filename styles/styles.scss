@@ -1,0 +1,18 @@
+:root {
+  --dark-shade: rgba(31, 32, 65, 1);
+  --purple: rgba(188, 156, 255, 1);
+  --green: rgba(111, 207, 151, 1);
+}
+
+.square {
+  border: 2px dashed red;
+  height: 5em;
+  width: 5em;
+
+  // Different colors
+  .dark-shade {background-color: var(--dark-shade)}
+  .purple {background-color: var(--purple)}
+  .green {background-color: var(--green)}
+}
+
+
