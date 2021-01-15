@@ -8,11 +8,23 @@
   border: 2px dashed red;
   height: 5em;
   width: 5em;
+  
+  // Fonts
+  @import ../fonts.css
 
-  // Different colors
-  .dark-shade {background-color: var(--dark-shade)}
-  .purple {background-color: var(--purple)}
-  .green {background-color: var(--green)}
+  //Squares of different colors
+  .dark-shade {
+    background-color: var(--dark-shade);
+    p {font-weight: 300;}
+  }
+  .purple {
+    background-color: var(--purple);
+    p {font-weight: 500;}
+  }
+  .green {
+    background-color: var(--green);
+    p {font-weight: 700;}
+  }
 }
 
 
