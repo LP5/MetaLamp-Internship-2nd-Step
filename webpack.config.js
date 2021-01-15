@@ -76,9 +76,8 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
           // Creates 'style' nodes from JS stings
-          "style-loader" ,
+          "style-loader",
           // Translates CSS into CommonJS
           "css-loader",
           // Complies SASS into CSS

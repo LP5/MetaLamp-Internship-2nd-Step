@@ -1,33 +1,35 @@
-:root {
-  --dark-shade: 31, 32, 65;
-  --purple: 188, 156, 255;
-  --green: 111, 207, 151;
-}
+$dark-shade: #202041;
+$purple: #bc9cff;
+$green: #6fcf97;
 
 .square {
   border: 2px dashed red;
   height: 5em;
-  width: 5em;
-  
+  width: 70%;
+
   // Fonts
-  @import ../fonts.css
+  // @import "../fonts.css";
   p {
     font-family: inherit;
-  };
+  }
 
   //Squares of different colors
-  .dark-shade {
-    background-color: rbga(var(--dark-shade), 1);
-    p {font-weight: 300;};
-  };
-  .purple {
-    background-color: rbga(var(--purple), 1);
-    p {font-weight: 500;};
-  };
-  .green {
-    background-color: rbga(var(--green), 1);
-    p {font-weight: 700;};
-  };
+  &.dark-shade {
+    background-color: rgba($dark-shade, 1);
+    p {
+      font-weight: 300;
+    }
+  }
+  &.purple {
+    background: rgba($purple, 1);
+    p {
+      font-weight: 500;
+    }
+  }
+  &.green {
+    background: rgba($green, 1);
+    p {
+      font-weight: 700;
+    }
+  }
 }
-
-
