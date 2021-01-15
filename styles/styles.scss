@@ -1,7 +1,7 @@
 :root {
-  --dark-shade: rgba(31, 32, 65, 1);
-  --purple: rgba(188, 156, 255, 1);
-  --green: rgba(111, 207, 151, 1);
+  --dark-shade: 31, 32, 65;
+  --purple: 188, 156, 255;
+  --green: 111, 207, 151;
 }
 
 .square {
@@ -11,20 +11,23 @@
   
   // Fonts
   @import ../fonts.css
+  p {
+    font-family: inherit;
+  };
 
   //Squares of different colors
   .dark-shade {
-    background-color: var(--dark-shade);
-    p {font-weight: 300;}
-  }
+    background-color: rbga(var(--dark-shade), 1);
+    p {font-weight: 300;};
+  };
   .purple {
-    background-color: var(--purple);
-    p {font-weight: 500;}
-  }
+    background-color: rbga(var(--purple), 1);
+    p {font-weight: 500;};
+  };
   .green {
-    background-color: var(--green);
-    p {font-weight: 700;}
-  }
+    background-color: rbga(var(--green), 1);
+    p {font-weight: 700;};
+  };
 }
 
 

@@ -19,7 +19,7 @@ const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrettierPlugin = require("prettier-webpack-plugin");
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 /*
@@ -76,8 +76,9 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
+          MiniCssExtractPlugin.loader,
           // Creates 'style' nodes from JS stings
-          "style-lodaer",
+          "style-loader" ,
           // Translates CSS into CommonJS
           "css-loader",
           // Complies SASS into CSS
