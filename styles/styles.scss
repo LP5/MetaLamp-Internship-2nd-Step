@@ -11,26 +11,23 @@ $green: #6fcf97;
   width: 70%;
 
   p {
-    font-family: inherit;
+    font-family: Montserrat;
+    font-weight: bold;
   }
 
   //Squares of different colors
   &.dark-shade {
     background-color: rgba($dark-shade, 1);
-    p {
-      font-weight: 300;
-    }
   }
   &.purple {
     background: rgba($purple, 1);
     p {
-      font-weight: 500;
+      font-weight: normal;
     }
   }
   &.green {
     background: rgba($green, 1);
     p {
-      font-weight: 700;
     }
   }
 }
