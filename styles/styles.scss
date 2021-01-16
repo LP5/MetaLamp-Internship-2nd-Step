@@ -2,13 +2,14 @@ $dark-shade: #202041;
 $purple: #bc9cff;
 $green: #6fcf97;
 
+// Fonts
+@import "../fonts.css";
+
 .square {
   border: 2px dashed red;
   height: 5em;
   width: 70%;
 
-  // Fonts
-  // @import "../fonts.css";
   p {
     font-family: inherit;
   }
