@@ -1,33 +1,10 @@
-$dark-shade: #202041;
-$purple: #bc9cff;
-$green: #6fcf97;
+@use "../templates/colors/colors.scss";
+@use "../templates/text/text.scss";
 
 // Fonts
-@import "../fonts.css";
+@use "../fonts.css";
 
-.square {
-  border: 2px dashed red;
-  height: 5em;
-  width: 70%;
-
-  p {
-    font-family: Montserrat;
-    font-weight: bold;
-  }
-
-  //Squares of different colors
-  &.dark-shade {
-    background-color: rgba($dark-shade, 1);
-  }
-  &.purple {
-    background: rgba($purple, 1);
-    p {
-      font-weight: normal;
-    }
-  }
-  &.green {
-    background: rgba($green, 1);
-    p {
-    }
-  }
+.body {
+  font-family: Montserrat;
+  font-weight: bold;
 }
