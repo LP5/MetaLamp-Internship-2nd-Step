@@ -4,7 +4,23 @@
 // Fonts
 // @use "../fonts.css";
 
-.body {
+html {
+  width: 100%;
+}
+
+body {
+  display: inline;
   font-family: Montserrat;
   font-weight: bold;
+  width: 100%;
+}
+
+.colors {
+  display: block;
+  width: fit-content;
+}
+
+.text {
+  display: block;
+  width: fit-content;
 }
