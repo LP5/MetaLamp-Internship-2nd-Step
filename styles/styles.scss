@@ -5,11 +5,13 @@
 // @use "../fonts.css";
 
 html {
+  height: 100%;
   width: 100%;
 }
 
 body {
   display: flex;
+  margin: 0;
   flex-flow: row;
   font-family: Montserrat;
   font-weight: bold;
