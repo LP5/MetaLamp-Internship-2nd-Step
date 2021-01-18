@@ -9,10 +9,11 @@ html {
 }
 
 body {
-  display: inline;
+  display: flex;
+  flex-flow: row;
   font-family: Montserrat;
   font-weight: bold;
-  width: 100%;
+  justify-content: space-around;
 }
 
 .colors {
