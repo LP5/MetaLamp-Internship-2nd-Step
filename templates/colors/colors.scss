@@ -1,0 +1,51 @@
+$dark-shade: #1f2041 !default;
+$purple: #bc9cff !default;
+$green: #6fcf97 !default;
+
+.colors {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  .info {
+    position: relative;
+    left: 150%;
+    width: 200%;
+    margin: 0;
+  }
+  .square {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 6px;
+
+    position: relative;
+    left: 20%;
+    margin: 1.25em 0;
+
+    height: 5em;
+    width: 5em;
+
+    //Squares of different colors
+    &.dark-shade100 {
+      background-color: rgba($dark-shade, 1);
+    }
+    &.dark-shade75 {
+      background-color: rgba($dark-shade, 0.75);
+    }
+    &.dark-shade50 {
+      background-color: rgba($dark-shade, 0.5);
+    }
+    &.dark-shade25 {
+      background-color: rgba($dark-shade, 0.25);
+    }
+    &.dark-shade5 {
+      background-color: rgba($dark-shade, 0.05);
+    }
+    &.purple {
+      background: rgba($purple, 1);
+    }
+    &.green {
+      background: rgba($green, 1);
+    }
+  }
+}
