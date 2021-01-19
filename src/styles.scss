@@ -1,5 +1,8 @@
-@use "../templates/colors/colors.scss";
-@use "../templates/text/text.scss";
+// @use "../templates/_vars.scss" as *;
+@use "styles/colors/_colors.scss" as *;
+@use "styles/text/_text.scss" as *;
+// @forward "../templates/colors/colors.scss";
+// @forward "../templates/text/text.scss";
 
 // Fonts
 @use "../fonts.css";
@@ -16,6 +19,8 @@ body {
   font-family: Montserrat;
   font-weight: bold;
   justify-content: space-around;
+
+  color: $dark;
 }
 
 .colors {

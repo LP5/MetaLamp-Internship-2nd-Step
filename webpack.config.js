@@ -81,7 +81,13 @@ module.exports = {
           // Translates CSS into CommonJS
           "css-loader",
           // Complies SASS into CSS
-          "sass-loader"
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: "src/styles/_vars.scss"
+              }
+          }
         ]
       },
       {

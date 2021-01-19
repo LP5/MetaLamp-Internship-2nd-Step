@@ -1,2 +1,2 @@
-import "../styles/styles.scss";
+import "./styles.scss";
 console.log("Hello World from your main file!");
