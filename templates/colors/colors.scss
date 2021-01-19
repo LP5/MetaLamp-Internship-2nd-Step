@@ -28,19 +28,19 @@ $green: #6fcf97 !default;
     width: 5em;
 
     //Squares of different colors
-    &.dark-shade100 {
+    &.dark-shade {
       background-color: rgba($dark-shade, 1);
     }
-    &.dark-shade75 {
+    &:nth-child(2) {
       background-color: rgba($dark-shade, 0.75);
     }
-    &.dark-shade50 {
+    &:nth-child(3) {
       background-color: rgba($dark-shade, 0.5);
     }
-    &.dark-shade25 {
+    &:nth-child(4) {
       background-color: rgba($dark-shade, 0.25);
     }
-    &.dark-shade5 {
+    &:nth-child(5) {
       background-color: rgba($dark-shade, 0.05);
     }
     &.purple {
