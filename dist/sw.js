@@ -108,8 +108,20 @@ define("./sw.js",['./workbox-c49a797c'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
+    "url": "../fonts/Montserrat-Regular.eot",
+    "revision": "af0492c24e83e57b6b8a843d96c818af"
+  }, {
+    "url": "../fonts/Montserrat-Regular.svg",
+    "revision": "7066b320b56bc49a45b07c5f23d9b9e4"
+  }, {
+    "url": "../fonts/Montserrat-Regular.ttf",
+    "revision": "ee6539921d713482b8ccd4d0d23961bb"
+  }, {
+    "url": "../fonts/Montserrat-Regular.woff",
+    "revision": "c5b3f5f9512bd455789cb18694940241"
+  }, {
     "url": "main.js",
-    "revision": "6adfcd9c619ba101ca08ad60e28973c1"
+    "revision": "3a059dd2628004eb3ba2046791a5c39c"
   }], {});
 
 });
