@@ -1,0 +1,8 @@
+@use "_vars.scss";
+
+@mixin textField {
+  border: 1px solid $dark25;
+  &:hover {
+    border: 1px solid $dark50;
+  }
+}

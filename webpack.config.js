@@ -52,9 +52,17 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   mode: 'production',
 
-  plugins: [new PrettierPlugin(), new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
-            template: './src/index.pug'
-          }), new workboxPlugin.GenerateSW({
+  plugins: [
+    new PrettierPlugin(),
+    new webpack.ProgressPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: "formElements.html",
+      template: "./src/formElements.pug"
+    }),
+    new workboxPlugin.GenerateSW({
           swDest: 'sw.js',
           clientsClaim: true,
           skipWaiting: false,
