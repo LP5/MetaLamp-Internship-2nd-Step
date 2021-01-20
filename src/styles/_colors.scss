@@ -1,9 +1,10 @@
-@use "../_vars.scss" as *;
+@use "_vars.scss" as *;
 
 .colors {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
+  width: fit-content;
 
   .info {
     position: relative;
@@ -20,7 +21,6 @@
 
     position: relative;
     left: 20%;
-    margin: 1.25em 0;
 
     height: 5em;
     width: 5em;

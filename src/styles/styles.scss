@@ -1,11 +1,11 @@
-@use "styles/_vars.scss" as *;
-@use "styles/colors/_colors.scss" as *;
-@use "styles/text/_text.scss" as *;
+@use "_vars.scss" as *;
+@use "_colors.scss" as *;
+@use "_text.scss" as *;
 // @forward "../templates/colors/colors.scss";
 // @forward "../templates/text/text.scss";
 
 // Fonts
-@use "../fonts.css";
+@use "../../fonts.css";
 
 html {
   height: 100%;
@@ -20,12 +20,9 @@ body {
   font-weight: bold;
   justify-content: space-around;
 
-  color: $dark;
-}
+  height: 100%;
 
-.colors {
-  display: block;
-  width: fit-content;
+  color: $dark;
 }
 
 .text {
