@@ -4,17 +4,19 @@
 @mixin textField {
   height: 67px;
   width: 320px;
-  background: #ffffff;
-
-  border: 1px solid $dark25;
-
-  transition: 0.2s;
-  &:hover {
-    border: 1px solid $dark50;
-  }
+  background: #FFFFFF;
 
   input {
+    border: 1px solid $dark25;
+    border-radius: 4px;
+
     height: 44px;
     width: 320px;
+
+    transition: 0.2s;
+
+    &:hover, &:focus {
+      border: 1px solid $dark50;
+    }
   }
 }
