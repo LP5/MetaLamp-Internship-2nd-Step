@@ -1,8 +1,20 @@
-@use "_vars.scss";
+@use "_vars.scss" as *;
+@use "_text.scss" as *;
 
 @mixin textField {
+  height: 67px;
+  width: 320px;
+  background: #ffffff;
+
   border: 1px solid $dark25;
+
+  transition: 0.2s;
   &:hover {
     border: 1px solid $dark50;
+  }
+
+  input {
+    height: 44px;
+    width: 320px;
   }
 }

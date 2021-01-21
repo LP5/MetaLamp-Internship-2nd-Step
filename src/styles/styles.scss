@@ -1,6 +1,7 @@
 @use "_vars.scss" as *;
 @use "_colors.scss" as *;
 @use "_text.scss" as *;
+@use "_mixins.scss" as *;
 // @forward "../templates/colors/colors.scss";
 // @forward "../templates/text/text.scss";
 
@@ -28,4 +29,8 @@ body {
 .text {
   display: block;
   width: fit-content;
+}
+
+form {
+  @include textField;
 }
