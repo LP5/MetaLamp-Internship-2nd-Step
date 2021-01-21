@@ -4,7 +4,7 @@
 @mixin textField {
   height: 67px;
   width: 320px;
-  background: #FFFFFF;
+  background: #ffffff;
 
   input {
     border: 1px solid $dark25;
@@ -15,7 +15,8 @@
 
     transition: 0.2s;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       border: 1px solid $dark50;
     }
   }
