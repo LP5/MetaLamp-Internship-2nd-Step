@@ -1,6 +1,8 @@
-# Второй этап стажировки FSD
+# Второй этап стажировки Metalamp (бывш. FSD, Fullstack Development)
 ## Создание макета и практика грамотной верстки
-[Ссылка на страницу проекта](https://lp5.github.io/FSD-Internship-2nd-Step/) на GitHub Pages.
+
+**Ссылки на страницы проекта:**
+* [Макет проекта (UI-Kit)](https://lp5.github.io/Metalamp-Internship-2nd-Step/dist/index.html)
 
 **Стек технологий:**
 * Webpack - сборщик модулей
