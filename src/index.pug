@@ -3,30 +3,42 @@ html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
   body
-    section.colors
-      div.square
-        h2.info Dark Shade 100%
-        p.info #1F2041
-      div.square
-        h2.info Dark Shade 75%
-        p.info #1F2041
-      div.square
-        h2.info Dark Shade 50%
-        p.info #1F2041
-      div.square
-        h2.info Dark Shade 25%
-        p.info #1F2041
-      div.square
-        h2.info Dark Shade 5%
-        p.info #1F2041
-      div.square
-        h2.info Purple
-        p.info #BC9CFF
-      div.square
-        h2.info Green
-        p.info #6FCf97
-    section.text
-      h1 Header 1 (This one is the sub-section or widget title)
-      h2.info Header 2 (Next one is the item title inside widgets)
-      h3 Header 3 (This is a label or CTA text)
-      p.info Body/Paragprah (This is the body text which is used for most of the design, like paragraphs, lists, etc.)
+    section.colorsAndType
+      div.colors
+        div.square
+          h2.info Dark Shade 100%
+          p.info #1F2041
+        div.square
+          h2.info Dark Shade 75%
+          p.info #1F2041
+        div.square
+          h2.info Dark Shade 50%
+          p.info #1F2041
+        div.square
+          h2.info Dark Shade 25%
+          p.info #1F2041
+        div.square
+          h2.info Dark Shade 5%
+          p.info #1F2041
+        div.square
+          h2.info Purple
+          p.info #BC9CFF
+        div.square
+          h2.info Green
+          p.info #6FCf97
+      div.type
+        h1 Header 1 (This one is the sub-section or widget title)
+        h2.info Header 2 (Next one is the item title inside widgets)
+        h3 Header 3 (This is a label or CTA text)
+        p.info Body/Paragprah (This is the body text which is used for most of the design, like paragraphs, lists, etc.)
+    section.formElements
+      div.textField
+        form
+          label(for="textField") Text Field
+          br
+          input(id="textField")
+      div.textField
+        form
+          label(for="textField") Masked Text Field
+          br
+          input(id="textField")
