@@ -9,6 +9,7 @@
   input {
     border: 1px solid $dark25;
     border-radius: 4px;
+    outline: none;
 
     height: 44px;
     width: 320px;
@@ -16,8 +17,10 @@
     transition: 0.2s;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       border: 1px solid $dark50;
+      border-radius: 4px;
     }
   }
 }
