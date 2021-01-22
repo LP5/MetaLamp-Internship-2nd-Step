@@ -1,0 +1,13 @@
+@use "_vars.scss" as *;
+@use "_colors.scss" as *;
+@use "_text.scss" as *;
+@use "_mixins.scss" as *;
+
+.colorsAndType {
+  height: 900px;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
