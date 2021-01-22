@@ -2,6 +2,7 @@
 @use "_colors.scss" as *;
 @use "_text.scss" as *;
 @use "_mixins.scss" as *;
+@use "_sections.scss" as *;
 // @forward "../templates/colors/colors.scss";
 // @forward "../templates/text/text.scss";
 
@@ -14,16 +15,19 @@ html {
 }
 
 body {
-  display: flex;
+  display: block;
   margin: 0;
-  flex-flow: row;
   font-family: Montserrat;
   font-weight: bold;
-  justify-content: space-around;
 
   height: 100%;
 
+  background-color: $dark5;
   color: $dark;
+}
+
+section {
+  background-color: #fff;
 }
 
 .text {
