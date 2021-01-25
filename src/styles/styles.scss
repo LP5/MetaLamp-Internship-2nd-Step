@@ -7,7 +7,7 @@
 // @forward "../templates/text/text.scss";
 
 // Fonts
-@use "../../fonts.css";
+// @use "../../fonts.css";
 
 html {
   height: 100%;
@@ -17,13 +17,12 @@ html {
 body {
   display: block;
   margin: 0;
-  font-family: Montserrat;
+  // font-family: Montserrat;
   font-weight: bold;
 
   height: 100%;
 
   background-color: $dark5;
-  color: $dark;
 }
 
 section {

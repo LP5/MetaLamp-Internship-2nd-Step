@@ -1,21 +1,35 @@
 @use "_vars.scss" as *;
+@use "../../fonts.css" as *;
 
 h1 {
+  font-family: Montserrat;
   font-size: 24px;
+
+  color: $dark;
 }
 
 h2 {
+  font-family: Montserrat;
   font-size: 19px;
+
+  color: $dark;
 }
 
 h3,
-label {
+label,
+option {
+  font-family: Montserrat;
   font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
+
+  color: $dark;
 }
 
 p,
-input {
+input,
+select {
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
 
