@@ -45,3 +45,7 @@ section {
 .textField {
   @include textField;
 }
+
+.nojs {
+  @include nojs;
+}
