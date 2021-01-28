@@ -46,6 +46,6 @@ section {
   @include textField;
 }
 
-.nojs {
-  @include nojs;
+.collapsed {
+  @include collapsed;
 }

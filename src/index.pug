@@ -56,8 +56,11 @@ html
               div.circle
               p Тест
               div.circle
-      div(class="dropdown nojs" id="dropdown")
-        span Спальни
-          div.circle.decrease
-          span(id="amount") 0
-          div.circle.increase
+      div(class="dropdown" id="dropdown")
+        h3 Dropdown
+          div.dropdown
+            span Спальни
+              div.collapsed
+                div.circle.decrease
+                span(id="amount") 0
+                div.circle.increase
