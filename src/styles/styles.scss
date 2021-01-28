@@ -46,6 +46,10 @@ section {
   @include textField;
 }
 
+.dropdown {
+  @include dropdown;
+}
+
 .collapsed {
   @include collapsed;
 }

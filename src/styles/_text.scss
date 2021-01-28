@@ -27,11 +27,14 @@ option {
 }
 
 p,
+span,
 input,
 select {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
+
+  line-height: 24px;
 
   color: $dark75;
 }

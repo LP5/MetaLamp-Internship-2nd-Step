@@ -31,6 +31,23 @@
   }
 }
 
+@mixin dropdown {
+  height: 44px;
+  width: 320px;
+
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
+  border: 1px solid $dark25;
+  border-radius: 4px;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    border: 1px solid $dark50;
+  }
+}
+
 @mixin collapsed {
   display: none;
 }
