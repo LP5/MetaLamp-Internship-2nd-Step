@@ -48,6 +48,11 @@
   }
 }
 
-@mixin collapsed {
+@mixin default {
   display: none;
+}
+
+@mixin expanded {
+  display: flex;
+  flex-flow: row;
 }

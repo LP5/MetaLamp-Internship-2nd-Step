@@ -48,8 +48,10 @@ section {
 
 .dropdown {
   @include dropdown;
-}
-
-.collapsed {
-  @include collapsed;
+  .default {
+    @include default;
+  }
+  .expanded {
+    @include expanded;
+  }
 }
