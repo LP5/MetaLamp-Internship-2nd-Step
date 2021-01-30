@@ -58,10 +58,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.pug'
     }),
-    new HtmlWebpackPlugin({
-      filename: "formElements.html",
-      template: "./src/formElements.pug"
-    }),
     new workboxPlugin.GenerateSW({
           swDest: 'sw.js',
           clientsClaim: true,

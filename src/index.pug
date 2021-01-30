@@ -2,7 +2,8 @@ doctype html
 html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
-  body
+    script(src="scripts/dropdown.js")
+  body(onload="dropdown()")
     h1 Colors & Type
     section.colorsAndType
       div.colors
@@ -74,3 +75,4 @@ html
                 div.circle.decrease
                 span(id="amount") 0
                 div.circle.increase
+

@@ -46,15 +46,6 @@
   &:focus {
     border: 1px solid $dark50;
   }
-
-  @mixin default {
-    display: none;
-  }
-
-  @mixin expanded {
-    display: flex;
-    flex-flow: row;
-  }
 }
 
 @mixin default {
