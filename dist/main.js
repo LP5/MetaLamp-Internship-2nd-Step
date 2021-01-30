@@ -125,7 +125,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************************/
 /***/ (() => {
 
-eval("// const dropdown = getELementByClassName(\"dropdown\")\n/*\nwindow.onload = function dropdown() {\n  alert(\"JS file successfully imported\");\n}\n*/\n\nfunction dropdownJS() {\n  document.getElementById(\"dropdownJS\").style(\"expanded\");\n}\n\n\n//# sourceURL=webpack://my-webpack-project/./src/scripts/dropdown.js?");
+eval("// const dropdown = getELementByClassName(\"dropdown\")\n/*\nwindow.onload = function dropdown() {\n  alert(\"JS file successfully imported\");\n}\n*/\n\nfunction dropdownJS() {\n  document.getElementById(\"dropdownJS\").classList.toggle(\"expanded\");\n}\n\n\n//# sourceURL=webpack://my-webpack-project/./src/scripts/dropdown.js?");
 
 /***/ })
 

@@ -6,5 +6,5 @@ window.onload = function dropdown() {
 */
 
 function dropdownJS() {
-  document.getElementById("dropdownJS").style("expanded");
+  document.getElementById("dropdownJS").classList.toggle("expanded");
 }
