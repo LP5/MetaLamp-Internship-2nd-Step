@@ -1,4 +1,4 @@
 // const dropdown = getELementByClassName("dropdown")
-function dropdown() {
-  console.log("JS file successfully imported");
-}
+window.onload = function dropdown() {
+  alert("JS file successfully imported");
+};
