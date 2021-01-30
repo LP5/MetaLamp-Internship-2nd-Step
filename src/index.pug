@@ -59,24 +59,21 @@ html
               div.circle
       div(id="dropdown")
         h3 Dropdown
-          div.dropdown
+          div(class="dropdown" onclick="dropdownJS()")
             span Спальни
-              div(class="default" id="dropdownJS" onclick="dropdownJS()")
+            div(class="default" id="dropdownJS")
+              div.item
                 span Спальни
                 div.circle.decrease
                 span(id="amount") 0
                 div.circle.increase
-      div(id="dropdown")
-        h3 Dropdown
-          div.dropdown
-            span Спальни
-              div(class="expanded" id="dropdownJS" onclick="dropdownJS()")
-                span Спальни
+              div.item
+                span Кровати
                 div.circle.decrease
                 span(id="amount") 0
                 div.circle.increase
-      div(class="default" id="dropdownJS" onclick="dropdownJS()")
-        span Спальни
-        div.circle.decrease
-        span(id="amount") 0
-        div.circle.increase
+              div.item
+                span Ванные комнаты
+                div.circle.decrease
+                span(id="amount") 0
+                div.circle.increase

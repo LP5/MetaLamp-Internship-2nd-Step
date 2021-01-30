@@ -46,13 +46,26 @@
   &:focus {
     border: 1px solid $dark50;
   }
+
+  span {
+    padding-right: 20%;
+  }
+}
+
+@mixin item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 @mixin default {
   display: none;
+  flex-flow: column;
+  justify-content: space-around;
+
+  position: relative;
 }
 
 @mixin expanded {
   display: flex;
-  flex-flow: row;
 }
