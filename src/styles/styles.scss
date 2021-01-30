@@ -48,7 +48,9 @@ section {
 
 .dropdown {
   @include dropdown;
-  @include item;
+  .item {
+    @include item;
+  }
   .default {
     @include default;
   }
