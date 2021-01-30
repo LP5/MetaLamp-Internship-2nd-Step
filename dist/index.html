@@ -2,9 +2,9 @@
 <html>
   <head>
     <!-- link(href='../styles/styles.scss' rel='stylesheet' type='text/css')-->
-    <script src="scripts/dropdown.js"></script>
+    <script src="../src/scripts/dropdown.js"></script>
   </head>
-  <body onload="dropdown()">
+  <body>
     <h1>Colors & Type</h1>
     <section class="colorsAndType">
       <div class="colors">
@@ -76,7 +76,7 @@
       <div id="dropdown">
         <h3>Dropdown
           <div class="dropdown"><span>Спальни
-              <div class="default"><span>Спальни</span>
+              <div class="default" id="dropdownJS" onclick="dropdownJS()"><span>Спальни</span>
                 <div class="circle decrease"></div><span id="amount">0</span>
                 <div class="circle increase"></div>
               </div></span></div>
@@ -85,7 +85,7 @@
       <div id="dropdown">
         <h3>Dropdown
           <div class="dropdown"><span>Спальни
-              <div class="expanded"><span>Спальни</span>
+              <div class="expanded" id="dropdownJS" onclick="dropdownJS()"><span>Спальни</span>
                 <div class="circle decrease"></div><span id="amount">0</span>
                 <div class="circle increase"></div>
               </div></span></div>

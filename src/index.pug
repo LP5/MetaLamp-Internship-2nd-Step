@@ -2,8 +2,8 @@ doctype html
 html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
-    script(src="scripts/dropdown.js")
-  body(onload="dropdown()")
+    script(src="../src/scripts/dropdown.js")
+  body()
     h1 Colors & Type
     section.colorsAndType
       div.colors
@@ -61,7 +61,7 @@ html
         h3 Dropdown
           div.dropdown
             span Спальни
-              div.default
+              div(class="default" id="dropdownJS" onclick="dropdownJS()")
                 span Спальни
                 div.circle.decrease
                 span(id="amount") 0
@@ -70,7 +70,7 @@ html
         h3 Dropdown
           div.dropdown
             span Спальни
-              div.expanded
+              div(class="expanded" id="dropdownJS" onclick="dropdownJS()")
                 span Спальни
                 div.circle.decrease
                 span(id="amount") 0
