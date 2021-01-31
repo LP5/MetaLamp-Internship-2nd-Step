@@ -63,7 +63,6 @@ module.exports = {
           clientsClaim: true,
           skipWaiting: false,
         })],
-
   module: {
     rules: [
       {
