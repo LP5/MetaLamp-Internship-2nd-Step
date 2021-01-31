@@ -61,9 +61,10 @@
 @mixin default {
   display: none;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   position: relative;
+  top: 100%;
 }
 
 @mixin expanded {
