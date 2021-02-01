@@ -50,6 +50,9 @@ section {
   @include dropdown;
   .item {
     @include item;
+    .name {
+      @include name;
+    }
   }
   .default {
     @include default;
