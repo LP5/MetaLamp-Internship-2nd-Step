@@ -70,9 +70,12 @@
   flex-flow: column;
   justify-content: space-around;
 
+  background: #ffffff;
+
   position: relative;
 }
 
 @mixin expanded {
   display: flex;
+  filter: $drop-shadow;
 }
