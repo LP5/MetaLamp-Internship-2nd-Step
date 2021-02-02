@@ -1,23 +1,21 @@
 @use "_vars.scss" as *;
 @use "../../fonts.css" as *;
 
-h1 {
+@mixin widgetTitle {
   font-family: Montserrat;
   font-size: 24px;
 
   color: $dark;
 }
 
-h2 {
+@mixin widgetItem {
   font-family: Montserrat;
   font-size: 19px;
 
   color: $dark;
 }
 
-h3,
-span,
-label {
+@mixin label {
   font-family: Montserrat;
   font-size: 12px;
   font-weight: bold;
@@ -28,8 +26,7 @@ label {
   color: $dark;
 }
 
-p,
-input {
+@mixin body {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;

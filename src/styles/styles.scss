@@ -15,6 +15,13 @@ html {
 }
 
 body {
+  h1 {
+    @include widgetTitle;
+  }
+  h3 {
+    @include label;
+  }
+
   display: block;
   margin: 0;
   // font-family: Montserrat;
@@ -53,8 +60,9 @@ section {
 
 .textField {
   @include textField;
-
+  @include label;
   input {
+    @include body;
     &:hover,
     &:focus,
     &:active {
@@ -85,4 +93,8 @@ section {
     border: 1px solid $dark50;
     border-radius: 4px;
   }
+}
+
+.checkbox {
+  @include checkbox;
 }
