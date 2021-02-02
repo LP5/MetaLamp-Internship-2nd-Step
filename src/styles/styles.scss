@@ -18,8 +18,17 @@ body {
   h1 {
     @include widgetTitle;
   }
-  h3 {
+  h2 {
+    @include widgetItem;
+  }
+  h3,
+  label {
     @include label;
+  }
+  p,
+  input,
+  span {
+    @include body;
   }
 
   display: block;
@@ -97,4 +106,9 @@ section {
 
 .checkbox {
   @include checkbox;
+
+  label {
+    @include body;
+    color: $dark50;
+  }
 }
