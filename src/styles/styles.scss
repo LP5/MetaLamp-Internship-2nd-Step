@@ -53,6 +53,20 @@ section {
 
 .textField {
   @include textField;
+
+  input {
+    &:hover,
+    &:focus,
+    &:active {
+      @include focus;
+    }
+  }
+}
+
+.textField:nth-of-type(2) {
+  input {
+    @include focus;
+  }
 }
 
 .dropdown {

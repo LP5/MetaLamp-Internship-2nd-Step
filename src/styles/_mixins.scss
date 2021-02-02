@@ -30,14 +30,12 @@
     width: 100%;
 
     transition: 0.2s;
-
-    &:hover,
-    &:focus,
-    &:active {
-      border: 1px solid $dark50;
-      border-radius: 4px;
-    }
   }
+}
+
+@mixin focus {
+  border: 1px solid $dark50;
+  border-radius: 4px;
 }
 
 @mixin dropdown {
