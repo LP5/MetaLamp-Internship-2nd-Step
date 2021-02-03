@@ -110,5 +110,6 @@ section {
   label {
     @include body;
     color: $dark50;
+    text-transform: none;
   }
 }
