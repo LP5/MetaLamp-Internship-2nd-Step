@@ -84,6 +84,19 @@
   display: block;
   height: max-content;
 
-  [type="Checkbox"]:checked {
-    color: linear-gradient($gradient-primary);
+  input[type="checkbox"] {
+    appearance: none;
+    outline: none;
+
+    border: 1px solid $dark25;
+    border-radius: 4px;
+
+    height: 20px;
+    width: 20px;
+  }
+  input[type="checkbox"]:checked {
+    background: linear-gradient($gradient-primary);
+
+    border: 1px solid $purple;
+  }
 }
