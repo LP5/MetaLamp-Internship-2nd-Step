@@ -84,7 +84,6 @@
   display: block;
   height: max-content;
 
-  &:checked {
+  [type="Checkbox"]:checked {
     color: linear-gradient($gradient-primary);
-  }
 }
