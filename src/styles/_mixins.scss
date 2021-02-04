@@ -83,4 +83,8 @@
 @mixin checkbox {
   display: block;
   height: max-content;
+
+  &:checked {
+    color: linear-gradient($gradient-primary);
+  }
 }
