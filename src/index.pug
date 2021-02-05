@@ -90,11 +90,12 @@ html
         input(type="checkbox" id="checkbox")
         label(for="checkbox") Можно пригласить гостей (до 10 человек)
         br
-      div.buttons
-        label(for="radio") Мужчина
-          input(type="radio" id="radio")
-          span.checkmark
-        br
-        label(for="radio") Женщина
-          input(type="radio" id="radio")
-          span.checkmark
+      div.buttons.radio
+        form
+          fieldset
+            h3 Radio Buttons
+            input(type="radio" id="male" name="gender")
+            label(for="male") Мужчина
+            br
+            input(type="radio" id="female" name="gender")
+            label(for="female") Женщина

@@ -101,6 +101,11 @@
     border: 1px solid $purple;
   }
 
+  .radio {
+    display: inline;
+    background: red;
+  }
+
   .chechmark {
     &:after {
       background: linear-gradient($gradient-primary);
