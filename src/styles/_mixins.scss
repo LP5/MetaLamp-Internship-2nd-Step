@@ -95,15 +95,31 @@
     height: 20px;
     width: 20px;
   }
+
   input[type="checkbox"]:checked + label[for="checkbox"]:after {
     background: linear-gradient($gradient-primary);
 
     border: 1px solid $purple;
   }
 
-  .radio {
-    display: inline;
-    background: red;
+  input[type="radio"] {
+    appearance: none;
+    border: 1px solid $dark25;
+    border-radius: 10px;
+    outline: none;
+
+    background: #fff;
+    box-sizing: border-box;
+
+    height: 20px;
+    width: 20px;
+
+    &:checked {
+      background: linear-gradient($gradient-primary);
+      border: 1px solid $purple;
+
+      padding: 4px;
+    }
   }
 
   .chechmark {
