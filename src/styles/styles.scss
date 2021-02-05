@@ -103,8 +103,8 @@ section {
   }
 }
 
-.checkbox {
-  @include checkbox;
+.buttons {
+  @include buttons;
 
   label {
     @include body;
