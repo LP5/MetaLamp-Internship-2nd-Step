@@ -129,10 +129,10 @@
         height: 60%;
         width: 60%;
       }
+    }
 
-      &:checked ~ .radio-input {
-        border: 1px solid $purple;
-      }
+    &:after {
+      border: 1px solid $purple;
     }
   }
 }
