@@ -106,39 +106,31 @@
     display: flex;
     flex-flow: row;
 
-    box-sizing: border-box;
-
     .radio-input {
-      appearance: none;
-      border: 1px solid $dark25;
-      border-radius: 50%;
-      outline: none;
-
       display: flex;
       justify-content: center;
 
       background: #fff;
-
-      height: 20px;
-      width: 20px;
+      box-sizing: border-box;
 
       input[type="radio"] {
-        opacity: 0;
-        height: 0;
-        width: 0;
+        appearance: none;
+
+        border: 2px solid $dark25;
+        border-radius: 50%;
+        outline: none;
+
+        height: 20px;
+        width: 20px;
 
         &:checked + .radio-control {
           background: linear-gradient($gradient-primary);
-          border-radius: 50%;
 
-          margin: auto;
+          border: 2px solid $purple;
+          border-radius: 50%;
 
           height: 60%;
           width: 60%;
-
-          &:checked + .radio-input {
-            border: 1px solid $purple;
-          }
         }
       }
     }
