@@ -106,6 +106,8 @@
     display: flex;
     flex-flow: row;
 
+    box-sizing: border-box;
+
     .radio-input {
       appearance: none;
       border: 1px solid $dark25;
@@ -116,7 +118,6 @@
       justify-content: center;
 
       background: #fff;
-      box-sizing: border-box;
 
       height: 20px;
       width: 20px;
@@ -134,11 +135,11 @@
 
           height: 60%;
           width: 60%;
-        }
-      }
 
-      &:after {
-        border: 1px solid $purple;
+          &:checked + .radio-input {
+            border: 1px solid $purple;
+          }
+        }
       }
     }
   }
