@@ -102,16 +102,12 @@
     border: 1px solid $purple;
   }
 
-  div.radio {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-
   label.radio {
     display: flex;
     flex-flow: row;
     align-items: center;
+
+    width: 200px;
 
     .radio-input {
       display: flex;
@@ -149,4 +145,10 @@
       }
     }
   }
+}
+
+@mixin radio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }

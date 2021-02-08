@@ -108,13 +108,17 @@
         <input type="checkbox" id="checkbox">
         <label for="checkbox">Можно пригласить гостей (до 10 человек)</label><br>
       </div>
-      <div class="buttons">
-        <h3>Radio Buttons</h3>
-        <label class="radio" for="male"><span class="radio-input">
-            <input type="radio" id="male" name="gender"><span class="radio-control"></span></span><span class="radio-label">Мужчина</span></label><br>
-        <label class="radio" for="female"> <span class="radio-input">
-            <input type="radio" id="female" name="gender"><span class="radio-control"></span></span><span class="radio-label">Женщина</span></label>
-      </div>
+      <form class="buttons radio">
+        <fieldset>
+          <legend>Radio Buttons</legend>
+          <div class="radio">
+            <label class="radio" for="male"><span class="radio-input">
+                <input type="radio" id="male" name="gender"><span class="radio-control"></span></span><span class="radio-label">Мужчина</span></label><br>
+            <label class="radio" for="female"> <span class="radio-input">
+                <input type="radio" id="female" name="gender"><span class="radio-control"></span></span><span class="radio-label">Женщина</span></label>
+          </div>
+        </fieldset>
+      </form>
     </section>
   <script src="main.js"></script></body>
 </html>

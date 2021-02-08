@@ -112,3 +112,7 @@ section {
     text-transform: none;
   }
 }
+
+.radio {
+  @include radio;
+}
