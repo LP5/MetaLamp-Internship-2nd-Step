@@ -105,10 +105,12 @@
   .radio {
     display: flex;
     flex-flow: row;
+    align-items: center;
 
     .radio-input {
       display: flex;
       justify-content: center;
+      align-items: center;
 
       background: #fff;
       box-sizing: border-box;
@@ -119,18 +121,24 @@
         border: 2px solid $dark25;
         border-radius: 50%;
         outline: none;
+        margin: 0;
 
         height: 20px;
         width: 20px;
 
-        &:checked + .radio-control {
-          background: linear-gradient($gradient-primary);
-
+        &:checked {
           border: 2px solid $purple;
           border-radius: 50%;
 
-          height: 60%;
-          width: 60%;
+          & ~ .radio-control {
+            background: linear-gradient($gradient-primary);
+            position: absolute;
+
+            border-radius: 50%;
+
+            height: 12px;
+            width: 12px;
+          }
         }
       }
     }
