@@ -21,7 +21,8 @@ body {
     @include widgetItem;
   }
   h3,
-  label {
+  label,
+  legend {
     @include label;
   }
   p,
