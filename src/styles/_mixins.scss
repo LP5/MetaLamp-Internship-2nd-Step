@@ -113,12 +113,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
 
       background: #fff;
       box-sizing: border-box;
 
+      label {
+        margin-left: 2em;
+      }
+
       input[type="radio"] {
         appearance: none;
+        position: absolute;
+        left: 0;
 
         border: 1px solid $dark25;
         border-radius: 50%;
@@ -135,6 +142,7 @@
           & ~ .radio-control {
             background: linear-gradient($gradient-primary);
             position: absolute;
+            left: 4px;
 
             border-radius: 50%;
 
@@ -142,12 +150,13 @@
             width: 12px;
           }
 
-          & + label:after {
+          & ~ label {
             color: $dark75;
           }
         }
       }
     }
+
     .radio-label {
       color: inherit;
     }
@@ -161,5 +170,7 @@
 
   fieldset {
     border: none;
+
+    width: 100%;
   }
 }
