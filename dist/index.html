@@ -99,15 +99,20 @@
           </div>
         </h3>
       </div>
-      <div class="buttons">
-        <h3>Checkbox Button</h3>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Можно курить</label><br>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Можно с питомцами</label><br>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Можно пригласить гостей (до 10 человек)</label><br>
-      </div>
+      <form class="buttons checkbox">
+        <fieldset>
+          <legend>Checkbox Buttons</legend>
+          <div class="checkbox">
+            <h3>Checkbox Button</h3>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Можно курить</label><br>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Можно с питомцами</label><br>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Можно пригласить гостей (до 10 человек)</label><br>
+          </div>
+        </fieldset>
+      </form>
       <form class="buttons radio">
         <fieldset>
           <legend>Radio Buttons</legend>
@@ -118,6 +123,17 @@
             <label class="radio" for="female"> <span class="radio-input">
                 <input type="radio" id="female" name="gender"><span class="radio-control"></span>
                 <label for="female">Женщина</label></span></label>
+          </div>
+        </fieldset>
+      </form>
+      <form class="buttons toggle">
+        <fieldset>
+          <legend>Toggle</legend>
+          <div class="toggle">
+            <input type="checkbox" id="toggle">
+            <label class="toggle" for="toggle">Получать спецпредложения</label>
+            <input type="checkbox" id="toggle">
+            <label class="toggle" for="toggle">Получать спецпредложения</label>
           </div>
         </fieldset>
       </form>

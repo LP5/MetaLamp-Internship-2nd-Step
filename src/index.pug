@@ -78,17 +78,19 @@ html
                 span.count(id="amount") 0
                 div.circle.increase
                   p +
-      div.buttons
-        h3 Checkbox Button
-        input(type="checkbox" id="checkbox")
-        label(for="checkbox") Можно курить
-        br
-        input(type="checkbox" id="checkbox")
-        label(for="checkbox") Можно с питомцами
-        br
-        input(type="checkbox" id="checkbox")
-        label(for="checkbox") Можно пригласить гостей (до 10 человек)
-        br
+      form.buttons.checkbox
+        fieldset
+          legend Checkbox Buttons
+          div.checkbox
+            input(type="checkbox" id="checkbox")
+            label(for="checkbox") Можно курить
+            br
+            input(type="checkbox" id="checkbox")
+            label(for="checkbox") Можно с питомцами
+            br
+            input(type="checkbox" id="checkbox")
+            label(for="checkbox") Можно пригласить гостей (до 10 человек)
+            br
       form.buttons.radio
         fieldset
           legend Radio Buttons
@@ -103,4 +105,11 @@ html
                 input(type="radio" id="female" name="gender")
                 span.radio-control
                 label(for="female") Женщина
-
+      form.buttons.toggle
+        fieldset
+          legend Toggle
+          div.toggle
+            input(type="checkbox" id="toggle")
+            label.toggle(for="toggle") Получать спецпредложения
+            input(type="checkbox" id="toggle")
+            label.toggle(for="toggle") Получать спецпредложения
