@@ -98,7 +98,9 @@
 
     cursor: pointer;
   }
+}
 
+@mixin checkbox {
   input[type="checkbox"] {
     border: 1px solid $dark25;
     border-radius: 4px;
@@ -112,6 +114,12 @@
       border: 1px solid $purple;
     }
   }
+}
+
+@mixin radio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 
   label.radio {
     display: flex;
@@ -173,10 +181,4 @@
       }
     }
   }
-}
-
-@mixin radio {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
 }

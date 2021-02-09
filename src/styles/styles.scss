@@ -107,13 +107,17 @@ section {
 .buttons {
   @include buttons;
 
+  .checkbox {
+    @include checkbox;
+  }
+
+  .radio {
+    @include radio;
+  }
+
   label {
     @include body;
     color: $dark50;
     text-transform: none;
   }
-}
-
-.radio {
-  @include radio;
 }
