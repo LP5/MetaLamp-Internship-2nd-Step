@@ -184,13 +184,24 @@
 }
 
 @mixin toggle {
+  display: flex;
+  flex-flow: column;
+
+  div {
+    display: flex;
+    flex: row nowrap;
+    align-items: center;
+
+    margin: 5px 0;
+  }
+
   input {
     appearance: none;
     position: absolute;
     left: 0;
 
     border: 1px solid $dark25;
-    border-radius: 50%;
+    border-radius: 10px;
     outline: none;
     margin: 0;
 
@@ -210,15 +221,17 @@
 
     &:checked {
       border: 1px solid $purple;
-      border-radius: 50%;
 
       & ~ .control {
-        transform: translateX(100%);
+        background: linear-gradient($gradient-primary);
+        transform: translateX(20px);
       }
+    }
 
-      & ~ label {
-        color: $dark75;
-      }
+    & ~ label {
+      color: $dark75;
+
+      margin-left: 3em;
     }
   }
 }
