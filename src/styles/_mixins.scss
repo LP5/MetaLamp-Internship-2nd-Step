@@ -185,18 +185,40 @@
 
 @mixin toggle {
   input {
+    appearance: none;
+    position: absolute;
+    left: 0;
+
     border: 1px solid $dark25;
-    border-radius: 10px;
+    border-radius: 50%;
+    outline: none;
+    margin: 0;
 
     height: 20px;
     width: 40px;
 
-    &:checked {
-      border: 1px solid $purple;
+    & ~ .control {
+      background: $dark25;
+      position: absolute;
+      left: 4px;
+
+      border-radius: 50%;
+
+      height: 12px;
+      width: 12px;
     }
 
-    & ~ label {
-      color: $dark75;
+    &:checked {
+      border: 1px solid $purple;
+      border-radius: 50%;
+
+      & ~ .control {
+        transform: translateX(100%);
+      }
+
+      & ~ label {
+        color: $dark75;
+      }
     }
   }
 }
