@@ -115,6 +115,10 @@ section {
     @include radio;
   }
 
+  .toggle {
+    @include toggle;
+  }
+
   label {
     @include body;
     color: $dark50;

@@ -101,14 +101,14 @@
 }
 
 @mixin checkbox {
-  input[type="checkbox"] {
+  input {
     border: 1px solid $dark25;
     border-radius: 4px;
 
     height: 20px;
     width: 20px;
 
-    &:checked + label[for="checkbox"]:after {
+    &:checked + label:after {
       background: linear-gradient($gradient-primary);
 
       border: 1px solid $purple;
@@ -146,7 +146,7 @@
         margin-left: 2em;
       }
 
-      input[type="radio"] {
+      input {
         appearance: none;
         position: absolute;
         left: 0;
@@ -163,7 +163,7 @@
           border: 1px solid $purple;
           border-radius: 50%;
 
-          & ~ .radio-control {
+          & ~ .control {
             background: linear-gradient($gradient-primary);
             position: absolute;
             left: 4px;
@@ -184,5 +184,19 @@
 }
 
 @mixin toggle {
-  display: block;
+  input {
+    border: 1px solid $dark25;
+    border-radius: 10px;
+
+    height: 20px;
+    width: 40px;
+
+    &:checked {
+      border: 1px solid $purple;
+    }
+
+    & ~ label {
+      color: $dark75;
+    }
+  }
 }
