@@ -54,66 +54,31 @@ html
           input(id="textField")
       div(id="dropdown")
         h3 Dropdown
-          div(class="dropdown" onclick="dropdownJS()")
-            p Спальни
-            div(class="default" id="dropdownJS")
-              div.item
-                span.name Спальни
-                div.circle.decrease
-                  p -
-                span.count(id="amount") 0
-                div.circle.increase
-                  p +
-              div.item
-                span.name Кровати
-                div.circle.decrease
-                  p -
-                span.count(id="amount") 0
-                div.circle.increase
-                  p +
-              div.item
-                span.name Ванные комнаты
-                div.circle.decrease
-                  p -
-                span.count(id="amount") 0
-                div.circle.increase
-                  p +
-      form.buttons
-        fieldset
-          legend Checkbox Buttons
-          div.checkbox
-            input(type="checkbox" id="checkbox")
-            label(for="checkbox") Можно курить
-            br
-            input(type="checkbox" id="checkbox")
-            label(for="checkbox") Можно с питомцами
-            br
-            input(type="checkbox" id="checkbox")
-            label(for="checkbox") Можно пригласить гостей (до 10 человек)
-            br
-      form.buttons
-        fieldset
-          legend Radio Buttons
-          div.radio
-            label.radio(for="male")
-              span.radio-input
-                input(type="radio" id="male" name="gender")
-                span.control
-                label(for="male") Мужчина
-            label.radio(for="female") 
-              span.radio-input
-                input(type="radio" id="female" name="gender")
-                span.control
-                label(for="female") Женщина
-      form.buttons
-        fieldset
-          legend Toggle
-          div.toggle
-            div
-              input(type="checkbox" id="toggle")
-              span.control
-              label.toggle(for="toggle") Получать спецпредложения
-            div
-              input(type="checkbox" id="toggle")
-              span.control
-              label.toggle(for="toggle") Получать спецпредложения
+        div(class="dropdown" onclick="dropdownJS()")
+          p Спальни
+          div(class="default" id="dropdownJS")
+            div.item
+              span.name Спальни
+              div.circle.decrease
+                p -
+              span.count(id="amount") 0
+              div.circle.increase
+                p +
+            div.item
+              span.name Кровати
+              div.circle.decrease
+                p -
+              span.count(id="amount") 0
+              div.circle.increase
+                p +
+            div.item
+              span.name Ванные комнаты
+              div.circle.decrease
+                p -
+              span.count(id="amount") 0
+              div.circle.increase
+                p +
+      include templates/checkbox.pug
+      include templates/radio.pug
+      include templates/toggle.pug
+
