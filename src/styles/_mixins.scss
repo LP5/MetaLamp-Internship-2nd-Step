@@ -243,13 +243,24 @@
     justify-content: flex-start;
   }
 
+  .filled {
+    button {
+      border: none;
+
+      color: #fff;
+      background: linear-gradient($gradient-primary);
+    }
+  }
+
   button {
     appearance: none;
+
+    color: $purple;
 
     border-radius: 22px;
     border-width: 2px;
     border-style: solid;
-    border-image: liner-gradient($gradient-primary);
+    border-image: liner-gradient($gradient-primary) 1;
 
     height: 44px;
     width: 99px;
