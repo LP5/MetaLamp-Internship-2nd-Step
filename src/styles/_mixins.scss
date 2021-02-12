@@ -243,17 +243,10 @@
     justify-content: flex-start;
   }
 
-  .filled {
-    button {
-      border: none;
-
-      color: #fff;
-      background: linear-gradient($gradient-primary);
-    }
-  }
-
   button {
     appearance: none;
+    outline: none;
+    background: #fff;
 
     color: $purple;
 
@@ -264,5 +257,44 @@
 
     height: 44px;
     width: 99px;
+  }
+
+  .filled {
+    button {
+      border: none;
+
+      color: #fff;
+      background: linear-gradient($gradient-primary);
+    }
+  }
+
+  .outlined {
+    .container {
+      background: linear-gradient($gradient-primary);
+
+      border-radius: 22px;
+
+      height: 44px;
+      width: 99px;
+
+      button {
+        background: #fff;
+        border: none;
+
+        margin: auto;
+
+        height: 42px;
+        width: 97px;
+      }
+    }
+  }
+
+  .simple {
+    button {
+      border: none;
+
+      height: 15px;
+      width: auto;
+    }
   }
 }
