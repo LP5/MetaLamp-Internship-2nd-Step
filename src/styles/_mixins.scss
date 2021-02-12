@@ -235,3 +235,21 @@
     }
   }
 }
+
+@mixin regular {
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  button {
+    appearance: none;
+
+    border: 2px solid linear-gradient($gradient-primary);
+    border-radius: 22px;
+
+    height: 44px;
+    width: 99px;
+  }
+}

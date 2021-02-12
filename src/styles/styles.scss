@@ -119,6 +119,10 @@ section {
     @include toggle;
   }
 
+  .regular {
+    @include regular;
+  }
+
   label {
     @include body;
     color: $dark50;
