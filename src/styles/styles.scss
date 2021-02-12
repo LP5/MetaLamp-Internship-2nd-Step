@@ -22,7 +22,8 @@ body {
   }
   h3,
   label,
-  legend {
+  legend,
+  button {
     @include label;
   }
   p,
