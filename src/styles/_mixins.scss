@@ -246,8 +246,10 @@
   button {
     appearance: none;
 
-    border: 2px solid linear-gradient($gradient-primary);
     border-radius: 22px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: liner-gradient($gradient-primary);
 
     height: 44px;
     width: 99px;
