@@ -45,6 +45,7 @@
     "workbox-webpack-plugin": "^6.0.2"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "material-design-icons": "^3.0.1"
   }
 }
