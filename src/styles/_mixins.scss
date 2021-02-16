@@ -336,3 +336,15 @@
     width: 320px;
   }
 }
+
+@mixin rate {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  span {
+    color: $purple;
+
+    width: 24px;
+  }
+}
