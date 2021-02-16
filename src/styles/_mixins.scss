@@ -323,4 +323,16 @@
       }
     }
   }
+
+  .wide {
+    appearance: none;
+    outline: none;
+    border: none;
+
+    background: linear-gradient($gradient-primary);
+    color: #fff;
+
+    height: 44px;
+    width: 320px;
+  }
 }
