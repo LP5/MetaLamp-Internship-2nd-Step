@@ -108,6 +108,18 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
+    "url": "../fonts/MaterialIcons-Regular.eot",
+    "revision": "4c73881afe654b72a1eae428368202bd"
+  }, {
+    "url": "../fonts/MaterialIcons-Regular.svg",
+    "revision": "a67013b29a1d4079f86303f074db8c9f"
+  }, {
+    "url": "../fonts/MaterialIcons-Regular.ttf",
+    "revision": "a37b0c01c0baf1888ca812cc0508f6e2"
+  }, {
+    "url": "../fonts/MaterialIcons-Regular.woff",
+    "revision": "40f1ca3d4ae7aa1758d5ae1122f3a99a"
+  }, {
     "url": "../fonts/Montserrat-Regular.eot",
     "revision": "af0492c24e83e57b6b8a843d96c818af"
   }, {
@@ -121,7 +133,7 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
     "revision": "c5b3f5f9512bd455789cb18694940241"
   }, {
     "url": "main.js",
-    "revision": "19434bde3413a160f7caacc49406a8f6"
+    "revision": "7a1ab8a66a432a466028493fc3a17456"
   }], {});
 
 });
