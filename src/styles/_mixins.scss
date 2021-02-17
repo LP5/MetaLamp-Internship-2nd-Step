@@ -390,7 +390,7 @@
     height: 40px;
     width: 40px;
 
-    &:nth-of-type(1) {
+    &:first-of-type {
       color: #fff;
       background: linear-gradient($gradient-primary);
     }
