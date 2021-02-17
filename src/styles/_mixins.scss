@@ -355,15 +355,19 @@
   flex-flow: row nowrap;
   justify-content: space-around;
 
-  div {
+  .rate {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
 
-  span,
-  .star,
-  .star_border {
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
     background: linear-gradient($gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
