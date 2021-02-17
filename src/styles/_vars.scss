@@ -4,14 +4,16 @@ $dark75: rgba($dark, 0.75);
 $dark50: rgba($dark, 0.5);
 $dark25: rgba($dark, 0.25);
 $dark5: rgba($dark, 0.05);
-$purple: #bc9cff !default;
-$purple50: #bc9cff80 !default;
-$green: #6fcf97 !default;
+$purple: #bc9cff;
+$purple50: #bc9cff80;
+$green: #6fcf97;
 $yellow: #8ba4f9;
 $yellow50: #8ba4f980;
+$cyan: #66d2ea;
 
 $gradient-primary: (180deg, $purple 0, $yellow 100%);
 $gradient-primary50: (180deg, $purple50 0, $yellow50 100%);
+$gradient-secondary: (180deg; $green 0, $cyan 100%);
 
 /* MISC */
 $drop-shadow: drop-shadow(0px 10px 20px $dark5);
