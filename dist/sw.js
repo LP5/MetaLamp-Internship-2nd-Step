@@ -108,6 +108,9 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
+    "url": "../fonts/Ellipse.svg",
+    "revision": "ba186f472d1116442b7b554f004533ef"
+  }, {
     "url": "../fonts/MaterialIcons-Regular.eot",
     "revision": "4c73881afe654b72a1eae428368202bd"
   }, {
@@ -133,7 +136,7 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
     "revision": "c5b3f5f9512bd455789cb18694940241"
   }, {
     "url": "main.js",
-    "revision": "4c0aa7122cb9d55308baa924deb5f852"
+    "revision": "075786e3d144ca1c76a4a864e88ef46e"
   }], {});
 
 });

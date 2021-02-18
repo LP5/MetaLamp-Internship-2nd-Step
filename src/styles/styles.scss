@@ -28,7 +28,8 @@ body {
   }
   p,
   input,
-  span {
+  span,
+  li {
     @include body;
   }
 
@@ -134,6 +135,10 @@ section {
 
   .pagination {
     @include pagination;
+  }
+
+  .list {
+    @include list;
   }
 
   label {
