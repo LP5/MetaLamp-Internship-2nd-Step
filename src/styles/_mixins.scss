@@ -237,6 +237,10 @@
 }
 
 @mixin like {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
   button {
     appearance: none;
     outline: none;
@@ -250,8 +254,6 @@
     background: $dark25;
     border-radius: 10px;
 
-
-
     margin: 0;
 
     height: 20px;
@@ -260,24 +262,32 @@
     &:active,
     &:last-of-type {
       background: linear-gradient($gradient-primary);
-      color: $purple;
+      
+      & div span {
+        color: $purple;
+      }
     }
 
     &:hover {
       cursor: pointer;
     }
 
-    & ~ * {
-      color: $dark25;
-      font-size: 10px;
+    div {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+
+      background: #fff;
+      border-radius: 10px;
+
+      height: 18px;
+      width: 38px;
     }
 
-    div {
-     background: #fff;
-
-     height: 18px;
-     width: 38px;
-   }
+    span {
+      font-size: 10px;
+    }
   }
 }
 
