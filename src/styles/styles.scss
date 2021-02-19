@@ -125,6 +125,10 @@ section {
     @include toggle;
   }
 
+  .like{
+    @include like;
+  }
+
   .regular {
     @include regular;
   }

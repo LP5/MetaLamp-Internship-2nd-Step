@@ -236,6 +236,51 @@
   }
 }
 
+@mixin like {
+  button {
+    appearance: none;
+    outline: none;
+    border:none;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background: $dark25;
+    border-radius: 10px;
+
+
+
+    margin: 0;
+
+    height: 20px;
+    width: 40px;
+
+    &:active,
+    &:last-of-type {
+      background: linear-gradient($gradient-primary);
+      color: $purple;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & ~ * {
+      color: $dark25;
+      font-size: 10px;
+    }
+
+    div {
+     background: #fff;
+
+     height: 18px;
+     width: 38px;
+   }
+  }
+}
+
 @mixin regular {
   div {
     display: flex;
