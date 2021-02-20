@@ -108,8 +108,8 @@
     height: 20px;
     width: 20px;
 
-    &:checked + label:after {
-      background: linear-gradient($gradient-primary);
+    &:checked {
+      content: url(../static/Vector.svg);
 
       border: 1px solid $purple;
     }

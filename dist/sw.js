@@ -135,8 +135,11 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
     "url": "../fonts/Montserrat-Regular.woff",
     "revision": "c5b3f5f9512bd455789cb18694940241"
   }, {
+    "url": "../fonts/Vector.svg",
+    "revision": "b0df085278d28b88611e5625a635b0ed"
+  }, {
     "url": "main.js",
-    "revision": "dc6c196acc94b34183927fb563fd37fc"
+    "revision": "73f0bee2ee3e0225b12325f66c9127fa"
   }], {});
 
 });
