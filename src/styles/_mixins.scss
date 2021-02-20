@@ -244,7 +244,7 @@
   button {
     appearance: none;
     outline: none;
-    border:none;
+    border: none;
 
     display: flex;
     flex-flow: column;
@@ -259,10 +259,14 @@
     height: 20px;
     width: 40px;
 
+    & div span {
+      color: $dark25;
+    }
+
     &:active,
     &:last-of-type {
       background: linear-gradient($gradient-primary);
-      
+
       & div span {
         color: $purple;
       }
