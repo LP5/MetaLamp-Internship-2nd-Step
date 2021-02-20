@@ -151,3 +151,7 @@ section {
     text-transform: none;
   }
 }
+
+.perks {
+  @include perks;
+}
