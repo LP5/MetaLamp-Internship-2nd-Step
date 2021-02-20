@@ -4,6 +4,7 @@
 @mixin widgetTitle {
   font-family: Montserrat;
   font-size: 24px;
+  font-weight: 700;
 
   color: $dark;
 }
@@ -11,6 +12,7 @@
 @mixin widgetItem {
   font-family: Montserrat;
   font-size: 19px;
+  font-weight: 700;
 
   color: $dark;
 }
@@ -19,7 +21,7 @@
   font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 
   line-height: 15px;
@@ -30,7 +32,7 @@
 @mixin body {
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
 
   color: $dark75;
 }
