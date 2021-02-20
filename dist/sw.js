@@ -136,10 +136,10 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
     "revision": "c5b3f5f9512bd455789cb18694940241"
   }, {
     "url": "../fonts/Vector.svg",
-    "revision": "b0df085278d28b88611e5625a635b0ed"
+    "revision": "e74a04049ac910f239e01882246b74fc"
   }, {
     "url": "main.js",
-    "revision": "73f0bee2ee3e0225b12325f66c9127fa"
+    "revision": "d7547892ede1cb8cf0f21f137d8fb590"
   }], {});
 
 });
