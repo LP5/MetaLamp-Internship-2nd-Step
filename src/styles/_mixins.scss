@@ -491,9 +491,30 @@
 }
 
 @mixin perks {
+  position: relative;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
   span {
     background: linear-gradient($gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  p:first-of-type {
+    font-weight: 700;
+  }
+
+  hr {
+    position: absolute;
+    bottom: 0;
+
+    background: $dark10;
+
+    border: none;
+    height: 1px;
+    width: 280px;
   }
 }
