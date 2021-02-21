@@ -490,21 +490,26 @@
   }
 }
 
-@mixin perks {
+@mixin roomInfo {
   position: relative;
 
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 
+  height: 79px;
+
   span {
     background: linear-gradient($gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    font-size: 48px;
+    line-height: 40.8px;
   }
 
-  p:first-of-type {
-    font-weight: 700;
+  pre {
+    margin-left: 10px;
   }
 
   hr {

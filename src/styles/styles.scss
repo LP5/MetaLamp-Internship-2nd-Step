@@ -27,6 +27,7 @@ body {
     @include label;
   }
   p,
+  pre,
   input,
   span,
   li {
@@ -152,6 +153,6 @@ section {
   }
 }
 
-.perks {
-  @include perks;
+.roomInfo {
+  @include roomInfo;
 }
