@@ -12,6 +12,7 @@ div.roomInfo
   hr
 
 mixin roomInfo(icon, info)
-  span(class="material-icons")= icon
-  pre= info
-  hr
+  .roomInfo
+    span.material-icons= icon
+    pre= info
+    hr
