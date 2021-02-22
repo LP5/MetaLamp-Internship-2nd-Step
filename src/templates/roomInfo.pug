@@ -11,8 +11,10 @@ div.roomInfo
       Окно в каждой из спален
   hr
 
-mixin roomInfo(icon, info)
+mixin roomInfo(icon, header, text)
   .roomInfo
     span.material-icons= icon
-    pre= info
+    .roomInfo-text
+      p= header
+      p= text
     hr
