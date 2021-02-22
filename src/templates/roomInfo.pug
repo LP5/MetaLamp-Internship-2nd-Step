@@ -10,3 +10,8 @@ div.roomInfo
       <b>Удобство</b>
       Окно в каждой из спален
   hr
+
+mixin roomInfo(icon, info)
+  span(class="material-icons")= icon
+  pre= info
+  hr
