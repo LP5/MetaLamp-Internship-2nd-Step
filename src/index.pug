@@ -3,6 +3,7 @@ html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
     script(src="../src/scripts/dropdown.js")
+    include templates/roomInfo.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -87,5 +88,5 @@ html
       include templates/buttons.pug
       include templates/pagination.pug
       include templates/list.pug
-      include templates/roomInfo.pug
-      +roomInfo("pets", "Питомцам", "Игрушки и корм")
+      +roomInfo("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
+      +roomInfo("location_city", "Удобство", "Окно в каждой из спален")

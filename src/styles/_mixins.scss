@@ -508,12 +508,17 @@
     line-height: 40.8px;
   }
 
-  pre {
-    margin-left: 10px;
-  }
-
   .roomInfo-text {
+    margin-left: 10px;
 
+    p {
+      font-weight: 400;
+      margin: 0;
+
+      &:first-of-type {
+        font-weight: 700;
+      }
+    }
   }
 
   hr {
