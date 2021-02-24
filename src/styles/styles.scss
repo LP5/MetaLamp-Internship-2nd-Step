@@ -118,6 +118,10 @@ section {
     @include checkbox;
   }
 
+  .checkbox--rich {
+    @include checkbox--rich;
+  }
+
   .radio {
     @include radio;
   }

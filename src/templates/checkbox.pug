@@ -10,3 +10,17 @@ form.buttons
       br
       input(type="checkbox" id="checkbox")
       label(for="checkbox") Можно пригласить гостей (до 10 человек)
+
+mixin checkbox__form--rich
+  form.buttons
+    fieldset
+      legend Rich Checkbox Buttons
+      div.checkbox.checkbox--rich
+        block
+
+mixin checkbox--rich(option, description)
+  input(type="checkbox" id="checkbox")
+  label(for="checkbox")
+    span= option
+    span= description
+  br

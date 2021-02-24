@@ -118,6 +118,25 @@
   }
 }
 
+@mixin checkbox--rich {
+  display: flex;
+  flex-flow: row nowrap;
+
+  & label {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    & span:first-of-type {
+      font-weight: bold;
+    }
+
+    & span:last-of-type {
+      font-size: 12px;
+    }
+  }
+}
+
 @mixin radio {
   display: flex;
   flex-flow: row wrap;

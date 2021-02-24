@@ -87,6 +87,9 @@ html
       include templates/range.pug
       include templates/buttons.pug
       include templates/pagination.pug
+      +checkbox__form--rich
+        +checkbox--rich("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+        +checkbox--rich("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
       include templates/list.pug
       +roomInfo("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
       +roomInfo("location_city", "Удобство", "Окно в каждой из спален")
