@@ -128,28 +128,28 @@
       }
     }
   }
-}
 
-@mixin checkbox--rich {
-  display: flex;
-  flex-flow: column;
-
-  & .wrapper {
+  &.checkbox--rich {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
+    flex-flow: column;
 
-    & label {
+    & .wrapper {
       display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
+      flex-flow: row nowrap;
+      align-items: flex-start;
 
-      & span:first-of-type {
-        font-weight: bold;
-      }
+      & label {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
 
-      & span:last-of-type {
-        font-size: 12px;
+        & span:first-of-type {
+          font-weight: bold;
+        }
+
+        & span:last-of-type {
+          font-size: 12px;
+        }
       }
     }
   }
