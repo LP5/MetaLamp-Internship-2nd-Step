@@ -1,21 +1,14 @@
-mixin checkbox__form
+mixin checkbox__form(title="Checkbox Buttons")
   form.buttons
     fieldset
-      legend Checkbox Buttons
-      .checkbox
+      legend= title
+      .checkbox(class!=attributes.class)
         block
 
 mixin checkbox(option)
   .wrapper
     input(type="checkbox" id="checkbox")
     label(for="checkbox")= option
-
-mixin checkbox__form--rich
-  form.buttons
-    fieldset
-      legend Rich Checkbox Buttons
-      .checkbox.checkbox--rich
-        block
 
 mixin checkbox--rich(option, description)
   .wrapper

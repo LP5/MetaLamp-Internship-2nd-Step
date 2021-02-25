@@ -82,7 +82,7 @@ html
                 p +
       
       +checkbox__form
-        +checkbox("Можно круить")
+        +checkbox("Можно курить")
         +checkbox("Можно с питомцами")
         +checkbox("Можно пригласить гостей (до 10 человек)")
       include templates/radio.pug
@@ -92,7 +92,14 @@ html
       include templates/range.pug
       include templates/buttons.pug
       include templates/pagination.pug
-      +checkbox__form--rich
+      +checkbox__form("Expandable Checkbox List")
+        +checkbox("Завтрак")
+        +checkbox("Письменный стол") 
+        +checkbox("Стул для кормления")
+        +checkbox("Кроватка")
+        +checkbox("Телевизор")
+        +checkbox("Шампунь")
+      +checkbox__form("Rich Checkbox Buttons")(class="checkbox checkbox--rich")
         +checkbox--rich("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
         +checkbox--rich("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
       include templates/list.pug
