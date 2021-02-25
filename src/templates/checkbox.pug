@@ -15,12 +15,12 @@ mixin checkbox__form--rich
   form.buttons
     fieldset
       legend Rich Checkbox Buttons
-      div.checkbox.checkbox--rich
+      .checkbox.checkbox--rich
         block
 
 mixin checkbox--rich(option, description)
-  input(type="checkbox" id="checkbox")
-  label(for="checkbox")
-    span= option
-    span= description
-  br
+  .wrapper
+    input(type="checkbox" id="checkbox")
+    label(for="checkbox")
+      span= option
+      span= description

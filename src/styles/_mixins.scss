@@ -101,7 +101,10 @@
 }
 
 @mixin checkbox {
-  input {
+  display: flex;
+  flex-flow: column;
+
+  & input {
     border: 1px solid $dark25;
     border-radius: 4px;
 
@@ -119,20 +122,22 @@
 }
 
 @mixin checkbox--rich {
-  display: flex;
-  flex-flow: row nowrap;
-
-  & label {
+  & .wrapper {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
 
-    & span:first-of-type {
-      font-weight: bold;
-    }
+    & label {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
 
-    & span:last-of-type {
-      font-size: 12px;
+      & span:first-of-type {
+        font-weight: bold;
+      }
+
+      & span:last-of-type {
+        font-size: 12px;
+      }
     }
   }
 }
