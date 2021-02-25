@@ -92,7 +92,7 @@ html
       include templates/range.pug
       include templates/buttons.pug
       include templates/pagination.pug
-      +checkbox__form("Expandable Checkbox List")(class="checkbox--collapsed", id="checkboxExpandable")
+      +checkbox__form("Expandable Checkbox List")(class="checkbox--collapsed", id="checkboxExpandable", onclick="checkboxExpand()")
         +checkbox("Завтрак")
         +checkbox("Письменный стол") 
         +checkbox("Стул для кормления")

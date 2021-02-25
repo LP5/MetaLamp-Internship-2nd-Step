@@ -1,8 +1,8 @@
 mixin checkbox__form(title="Checkbox Buttons")
-  form.buttons
+  form.buttons(onclick!=attributes.onclick)
     fieldset
       legend= title
-      .checkbox(class!=attributes.class)
+      .checkbox(class!=attributes.class, id!=attributes.id)
         block
 
 mixin checkbox(option)

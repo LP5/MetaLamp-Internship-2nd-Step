@@ -3,5 +3,5 @@ function dropdownJS() {
 }
 
 function checkboxExpand() {
-  document.getElementById("checkboxExpandable").classList.toggle("checkbox");
+  document.getElementById("checkboxExpandable").classList.toggle("checkbox--collapsed");
 }
