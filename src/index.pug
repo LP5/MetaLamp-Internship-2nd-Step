@@ -92,14 +92,21 @@ html
       include templates/range.pug
       include templates/buttons.pug
       include templates/pagination.pug
-      +checkbox__form("Expandable Checkbox List")
+      +checkbox__form("Expandable Checkbox List")(class="checkbox--collapsed", id="checkboxExpandable")
         +checkbox("Завтрак")
         +checkbox("Письменный стол") 
         +checkbox("Стул для кормления")
         +checkbox("Кроватка")
         +checkbox("Телевизор")
         +checkbox("Шампунь")
-      +checkbox__form("Rich Checkbox Buttons")(class="checkbox checkbox--rich")
+      +checkbox__form("Expandable Checkbox List")(id="checkboxExpandable")
+        +checkbox("Завтрак")
+        +checkbox("Письменный стол") 
+        +checkbox("Стул для кормления")
+        +checkbox("Кроватка")
+        +checkbox("Телевизор")
+        +checkbox("Шампунь")
+      +checkbox__form("Rich Checkbox Buttons")(class="checkbox--rich")
         +checkbox--rich("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
         +checkbox--rich("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
       include templates/list.pug

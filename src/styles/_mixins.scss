@@ -103,6 +103,10 @@
 @mixin checkbox {
   display: block;
 
+  &.checkbox--collapsed {
+    display: none;
+  }
+
   & .wrapper {
     display: flex;
     flex-flow: row nowrap;
