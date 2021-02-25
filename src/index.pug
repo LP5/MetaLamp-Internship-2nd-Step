@@ -4,6 +4,7 @@ html
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
     script(src="../src/scripts/dropdown.js")
     include templates/roomInfo.pug
+    include templates/checkbox.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -79,7 +80,11 @@ html
               span.count(id="amount") 0
               div.circle.increase
                 p +
-      include templates/checkbox.pug
+      
+      +checkbox__form
+        +checkbox("Можно круить")
+        +checkbox("Можно с питомцами")
+        +checkbox("Можно пригласить гостей (до 10 человек)")
       include templates/radio.pug
       include templates/toggle.pug
       include templates/like.pug

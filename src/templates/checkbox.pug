@@ -1,15 +1,14 @@
-form.buttons
-  fieldset
-    legend Checkbox Buttons
-    div.checkbox
-      input(type="checkbox" id="checkbox")
-      label(for="checkbox") Можно курить
-      br
-      input(type="checkbox" id="checkbox")
-      label(for="checkbox") Можно с питомцами
-      br
-      input(type="checkbox" id="checkbox")
-      label(for="checkbox") Можно пригласить гостей (до 10 человек)
+mixin checkbox__form
+  form.buttons
+    fieldset
+      legend Checkbox Buttons
+      .checkbox
+        block
+
+mixin checkbox(option)
+  .wrapper
+    input(type="checkbox" id="checkbox")
+    label(for="checkbox")= option
 
 mixin checkbox__form--rich
   form.buttons
