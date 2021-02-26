@@ -5,6 +5,7 @@ html
     script(src="../src/scripts/dropdown.js")
     include templates/roomInfo.pug
     include templates/checkbox.pug
+    include templates/buttons.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -90,7 +91,7 @@ html
       include templates/like.pug
       include templates/rate.pug
       include templates/range.pug
-      include templates/buttons.pug
+
       +buttons-form("Buttons")
         +button-filled("Click Me")
         +button-filled("Click Me")
