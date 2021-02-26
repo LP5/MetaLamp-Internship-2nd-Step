@@ -356,27 +356,65 @@
     &:hover {
       cursor: pointer;
     }
-  }
 
-  .filled {
-    button {
+    &.filled {
+      button {
+        border: none;
+
+        color: #fff;
+        background: linear-gradient($gradient-primary);
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .simple {
+      button {
+        border: none;
+
+        height: 15px;
+        width: auto;
+
+        &:hover {
+          color: $dark50;
+        }
+
+        &:nth-of-type(2) {
+          color: $dark50;
+        }
+      }
+    }
+
+    .wide {
+      appearance: none;
+      outline: none;
       border: none;
 
-      color: #fff;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+
       background: linear-gradient($gradient-primary);
+      color: #fff;
 
-      &:hover {
-        opacity: 0.5;
-      }
+      height: 44px;
+      width: 320px;
 
-      &:nth-of-type(2) {
-        opacity: 0.5;
+      span {
+        flex-direction: flex-end;
+
+        color: inherit;
+
+        width: 24px;
       }
     }
   }
 
   .outlined {
-    .container {
+    .outline {
       background: linear-gradient($gradient-primary);
 
       border-radius: 22px;
@@ -398,52 +436,6 @@
         background: linear-gradient($gradient-primary50);
         cursor: pointer;
       }
-
-      &:nth-of-type(2) {
-        background: linear-gradient($gradient-primary50);
-      }
-    }
-  }
-
-  .simple {
-    button {
-      border: none;
-
-      height: 15px;
-      width: auto;
-
-      &:hover {
-        color: $dark50;
-      }
-
-      &:nth-of-type(2) {
-        color: $dark50;
-      }
-    }
-  }
-
-  .wide {
-    appearance: none;
-    outline: none;
-    border: none;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-    background: linear-gradient($gradient-primary);
-    color: #fff;
-
-    height: 44px;
-    width: 320px;
-
-    span {
-      flex-direction: flex-end;
-
-      color: inherit;
-
-      width: 24px;
     }
   }
 }

@@ -91,6 +91,16 @@ html
       include templates/rate.pug
       include templates/range.pug
       include templates/buttons.pug
+      +button-filled("Click Me")
+      +button-filled("Click Me")
+      br
+      +button-outlined("Click Me")
+      +button-outlined("Click Me")
+      br
+      +button-simple("Click Me")
+      +button-simple("Click Me")
+      br
+      +button-wide("Перейти к оплате")
       include templates/pagination.pug
       +checkbox__form("Expandable Checkbox List")(class="checkbox--collapsed", id="checkboxExpandable", onclick="checkboxExpand()")
         +checkbox("Завтрак")

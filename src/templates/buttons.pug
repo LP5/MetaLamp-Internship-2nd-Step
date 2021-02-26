@@ -1,16 +1,28 @@
 form.buttons
   fieldset.regular
     legend Buttons
-    div.filled
+    .filled
       button(type="button") Click Me
       button(type="button") Click Me
-    div.outlined
-      div.container
+    .outlined
+      .container
         button(type="button") Click Me
-      div.container
+      .container
         button(type="button") Click Me
-    div.simple
+    .simple
       button(type="button") Click Me
       button(type="button") Click Me
     button(type="button").wide Перейти к оплате
       span.material-icons arrow_forward
+
+mixin button-filled(label)
+  button(type="button").filled= label
+mixin button-outlined(label)
+  .outlined
+    .outline
+      button(type="button")= label
+mixin button-simple(label)
+  button(type="button").simple= label
+mixin button-wide(label)
+  button(type="button").wide= label
+    span.material-icons arrow_forward
