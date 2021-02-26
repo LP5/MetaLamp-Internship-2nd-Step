@@ -341,7 +341,7 @@
     justify-content: flex-start;
   }
 
-  button {
+  & button {
     appearance: none;
     outline: none;
     background: #fff;
@@ -358,36 +358,28 @@
     }
 
     &.filled {
-      button {
-        border: none;
+      border: none;
 
-        color: #fff;
-        background: linear-gradient($gradient-primary);
+      color: #fff;
+      background: linear-gradient($gradient-primary);
 
-        &:hover {
-          opacity: 0.5;
-        }
+      &:hover {
+        opacity: 0.5;
       }
     }
 
-    .simple {
-      button {
-        border: none;
+    &.simple {
+      border: none;
 
-        height: 15px;
-        width: auto;
+      height: 15px;
+      width: auto;
 
-        &:hover {
-          color: $dark50;
-        }
-
-        &:nth-of-type(2) {
-          color: $dark50;
-        }
+      &:hover {
+        color: $dark50;
       }
     }
 
-    .wide {
+    &.wide {
       appearance: none;
       outline: none;
       border: none;

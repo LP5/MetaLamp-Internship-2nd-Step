@@ -1,19 +1,8 @@
-form.buttons
-  fieldset.regular
-    legend Buttons
-    .filled
-      button(type="button") Click Me
-      button(type="button") Click Me
-    .outlined
-      .container
-        button(type="button") Click Me
-      .container
-        button(type="button") Click Me
-    .simple
-      button(type="button") Click Me
-      button(type="button") Click Me
-    button(type="button").wide Перейти к оплате
-      span.material-icons arrow_forward
+mixin buttons-form(title)
+  form.buttons
+    fieldset.regular
+      legend= title
+      block
 
 mixin button-filled(label)
   button(type="button").filled= label
