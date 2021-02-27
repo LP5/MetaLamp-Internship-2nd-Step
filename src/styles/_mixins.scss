@@ -357,6 +357,10 @@
       cursor: pointer;
     }
 
+    &:disabled {
+      cursor: default;
+    }
+
     &.filled {
       border: none;
 
