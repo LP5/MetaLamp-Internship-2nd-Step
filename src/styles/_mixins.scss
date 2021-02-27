@@ -385,6 +385,7 @@
       background-clip: content-box, border-box;
       box-shadow: 99px 44px 0 #fff inset;
 
+      &:hover,
       &:disabled {
         background-image: linear-gradient(
             rgba(255, 255, 255, 0),
