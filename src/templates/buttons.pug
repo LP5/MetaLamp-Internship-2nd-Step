@@ -5,13 +5,13 @@ mixin buttons-form(title)
       block
 
 mixin button-filled(label)
-  button(type="button").filled= label
+  button(type="button").filled&attributes(attributes)= label
 mixin button-outlined(label)
   .outlined
     .outline
-      button(type="button")= label
+      button(type="button")&attributes(attributes)= label
 mixin button-simple(label)
-  button(type="button").simple= label
+  button(type="button").simple&attributes(attributes)= label
 mixin button-wide(label)
   button(type="button").wide= label
     span.material-icons arrow_forward

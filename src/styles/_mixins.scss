@@ -363,7 +363,8 @@
       color: #fff;
       background: linear-gradient($gradient-primary);
 
-      &:hover {
+      &:hover,
+      &:disabled {
         opacity: 0.5;
       }
     }
@@ -374,7 +375,8 @@
       height: 15px;
       width: auto;
 
-      &:hover {
+      &:hover,
+      &:disabled {
         color: $dark50;
       }
     }
@@ -424,7 +426,8 @@
         width: 97px;
       }
 
-      &:hover {
+      &:hover,
+      &:disabled {
         background: linear-gradient($gradient-primary50);
         cursor: pointer;
       }

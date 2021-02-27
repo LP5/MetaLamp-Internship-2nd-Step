@@ -91,15 +91,14 @@ html
       include templates/like.pug
       include templates/rate.pug
       include templates/range.pug
-
       +buttons-form("Buttons")
         +button-filled("Click Me")
-        +button-filled("Click Me")
+        +button-filled("Click Me")(disabled)
         div
           +button-outlined("Click Me")
-          +button-outlined("Click Me")
+          +button-outlined("Click Me")(disabled)
         +button-simple("Click Me")
-        +button-simple("Click Me")
+        +button-simple("Click Me")(disabled)
         +button-wide("Перейти к оплате")
       include templates/pagination.pug
       +checkbox__form("Expandable Checkbox List")(class="checkbox--collapsed", id="checkboxExpandable", onclick="checkboxExpand()")
