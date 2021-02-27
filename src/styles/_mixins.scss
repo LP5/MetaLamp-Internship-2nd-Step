@@ -335,10 +335,6 @@
 }
 
 @mixin regular {
-  display: flex;
-  flex-flow: row wrap;
-  width: fit-content;
-
   div {
     display: flex;
     flex-flow: row nowrap;
@@ -353,7 +349,6 @@
     color: $purple;
 
     border-radius: 22px;
-    margin: 10px;
 
     height: 44px;
     width: 99px;
