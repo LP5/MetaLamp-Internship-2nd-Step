@@ -6,10 +6,8 @@ mixin buttons-form(title)
 
 mixin button-filled(label)
   button(type="button").filled&attributes(attributes)= label
-mixin button-outlined(label)
-  .outlined
-    .outline
-      button(type="button")&attributes(attributes)= label
+mixin button-unfilled(label)
+  button(type="button").unfilled&attributes(attributes)= label
 mixin button-simple(label)
   button(type="button").simple&attributes(attributes)= label
 mixin button-wide(label)
