@@ -432,33 +432,6 @@
       }
     }
   }
-
-  .outlined {
-    .outline {
-      background: linear-gradient($gradient-primary);
-
-      border-radius: 22px;
-
-      height: 44px;
-      width: 99px;
-
-      button {
-        background: #fff;
-        border: none;
-
-        margin: auto;
-
-        height: 42px;
-        width: 97px;
-      }
-
-      &:hover,
-      &:disabled {
-        background: linear-gradient($gradient-primary50);
-        cursor: pointer;
-      }
-    }
-  }
 }
 
 @mixin rate {
