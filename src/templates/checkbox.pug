@@ -1,9 +1,3 @@
-mixin checkbox__form(title="Checkbox Buttons")
-  form.buttons(onclick!=attributes.onclick)
-    fieldset.checkbox(class!=attributes.class, id!=attributes.id)
-      legend= title
-      block
-
 mixin checkbox(option)
   .wrapper
     input(type="checkbox" id="checkbox")

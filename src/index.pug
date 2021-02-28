@@ -84,7 +84,7 @@ html
               div.circle.increase
                 p +
       
-      +checkbox__form
+      +form("Checkbox Buttons")
         +checkbox("Можно курить")
         +checkbox("Можно с питомцами")
         +checkbox("Можно пригласить гостей (до 10 человек)")
@@ -93,7 +93,7 @@ html
       include templates/like.pug
       include templates/rate.pug
       include templates/range.pug
-      +buttons-form("Buttons")
+      +form("Buttons")(class="regular")
         div
           +button-filled("Click Me")
           +button-filled("Click Me")(disabled)
@@ -105,22 +105,22 @@ html
           +button-simple("Click Me")(disabled)
         +button-wide("Перейти к оплате")
       include templates/pagination.pug
-      +checkbox__form("Expandable Checkbox List")(onclick="checkboxExpand()")
-        div(class="checkbox checkbox--collapsed", id="checkboxExpandable", )
+      +form("Expandable Checkbox List")(class="checkbox", onclick="checkboxExpand()")
+        div(class="checkbox checkbox--collapsed", id="checkboxExpandable")
           +checkbox("Завтрак")
           +checkbox("Письменный стол") 
           +checkbox("Стул для кормления")
           +checkbox("Кроватка")
           +checkbox("Телевизор")
           +checkbox("Шампунь")
-      +checkbox__form("Expandable Checkbox List")(id="checkboxExpandable")
+      +form("Expandable Checkbox List")(class="checkbox")
         +checkbox("Завтрак")
         +checkbox("Письменный стол") 
         +checkbox("Стул для кормления")
         +checkbox("Кроватка")
         +checkbox("Телевизор")
         +checkbox("Шампунь")
-      +checkbox__form("Rich Checkbox Buttons")(class="checkbox--rich")
+      +form("Rich Checkbox Buttons")(class="checkbox--rich")
         +checkbox--rich("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
         +checkbox--rich("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
       +form("Bullet List")(class="list")
