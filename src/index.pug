@@ -3,9 +3,11 @@ html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
     script(src="../src/scripts/dropdown.js")
+    include templates/mixins.pug
     include templates/roomInfo.pug
     include templates/checkbox.pug
     include templates/buttons.pug
+    include templates/list.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -103,13 +105,14 @@ html
           +button-simple("Click Me")(disabled)
         +button-wide("Перейти к оплате")
       include templates/pagination.pug
-      +checkbox__form("Expandable Checkbox List")(class="checkbox--collapsed", id="checkboxExpandable", onclick="checkboxExpand()")
-        +checkbox("Завтрак")
-        +checkbox("Письменный стол") 
-        +checkbox("Стул для кормления")
-        +checkbox("Кроватка")
-        +checkbox("Телевизор")
-        +checkbox("Шампунь")
+      +checkbox__form("Expandable Checkbox List")(onclick="checkboxExpand()")
+        div(class="checkbox checkbox--collapsed", id="checkboxExpandable", )
+          +checkbox("Завтрак")
+          +checkbox("Письменный стол") 
+          +checkbox("Стул для кормления")
+          +checkbox("Кроватка")
+          +checkbox("Телевизор")
+          +checkbox("Шампунь")
       +checkbox__form("Expandable Checkbox List")(id="checkboxExpandable")
         +checkbox("Завтрак")
         +checkbox("Письменный стол") 
@@ -120,6 +123,7 @@ html
       +checkbox__form("Rich Checkbox Buttons")(class="checkbox--rich")
         +checkbox--rich("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
         +checkbox--rich("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
-      include templates/list.pug
+      +form("Bullet List")(class="list")
+        +list("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00")
       +roomInfo("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
       +roomInfo("location_city", "Удобство", "Окно в каждой из спален")
