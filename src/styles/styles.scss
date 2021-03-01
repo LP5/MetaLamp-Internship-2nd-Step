@@ -111,8 +111,8 @@ section {
   @include rate;
 }
 
-.buttons {
-  @include buttons;
+form {
+  @include form;
 
   .checkbox {
     @include checkbox;
