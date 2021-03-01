@@ -8,6 +8,7 @@ html
     include templates/checkbox.pug
     include templates/buttons.pug
     include templates/list.pug
+    include templates/textfield.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -83,7 +84,12 @@ html
               span.count(id="amount") 0
               div.circle.increase
                 p +
-      
+      +form("Text Field")
+        +text-field("Default")
+      +form("Text Field")
+        +text-field("Hover / Focus")
+      +form("Masked Text Field")
+        +text-field()
       +form("Checkbox Buttons")(class="checkbox")
         +checkbox("Можно курить")
         +checkbox("Можно с питомцами")
