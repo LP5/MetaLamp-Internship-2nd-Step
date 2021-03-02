@@ -56,7 +56,7 @@ module.exports = {
     new PrettierPlugin(),
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.pug'
+      template: './src/pages/index.pug'
     }),
     new workboxPlugin.GenerateSW({
           swDest: 'sw.js',
@@ -94,7 +94,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "../fonts"
+              outputPath: "../../fonts"
             }
           }
         ]

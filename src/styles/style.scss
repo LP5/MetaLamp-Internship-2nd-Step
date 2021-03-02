@@ -1,7 +1,19 @@
-@use "_vars.scss" as *;
-@use "_text.scss" as *;
-@use "_mixins.scss" as *;
-@use "_sections.scss" as *;
+@forward "../../fonts.css";
+
+@forward "mixins/_mixins.scss";
+@forward "mixins/textfield.scss";
+@forward "mixins/checkbox.scss";
+@forward "mixins/list.scss";
+@forward "mixins/buttons.scss";
+@forward "mixins/roomInfo.scss";
+@forward "mixins/pagination.scss";
+
+@forward "common/_sections.scss";
+@forward "utils/_vars.scss";
+
+@use "utils/_vars.scss";
+@use "utils/_text.scss";
+
 // @forward "../templates/colors/colors.scss";
 // @forward "../templates/text/text.scss";
 

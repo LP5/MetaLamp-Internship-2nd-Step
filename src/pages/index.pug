@@ -3,12 +3,12 @@ html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
     script(src="../src/scripts/dropdown.js")
-    include templates/mixins.pug
-    include templates/roomInfo.pug
-    include templates/checkbox.pug
-    include templates/buttons.pug
-    include templates/list.pug
-    include templates/textfield.pug
+    include includes/mixins.pug
+    include includes/roomInfo/roomInfo.pug
+    include includes/checkbox/checkbox.pug
+    include includes/buttons/buttons.pug
+    include includes/list/list.pug
+    include includes/textfield/textfield.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -94,11 +94,11 @@ html
         +checkbox("Можно курить")
         +checkbox("Можно с питомцами")
         +checkbox("Можно пригласить гостей (до 10 человек)")
-      include templates/radio.pug
-      include templates/toggle.pug
-      include templates/like.pug
-      include templates/rate.pug
-      include templates/range.pug
+      include includes/buttons/radio.pug
+      include includes/buttons/toggle.pug
+      include includes/buttons/like.pug
+      include includes/buttons/rate.pug
+      include includes/buttons/range.pug
       +form("Buttons")(class="regular")
         div
           +button-filled("Click Me")
@@ -110,7 +110,7 @@ html
           +button-simple("Click Me")
           +button-simple("Click Me")(disabled)
         +button-wide("Перейти к оплате")
-      include templates/pagination.pug
+      include includes/buttons/pagination.pug
       +form("Expandable Checkbox List")(class="checkbox", onclick="checkboxExpand()")
         div(class="checkbox checkbox--collapsed", id="checkboxExpandable")
           +checkbox("Завтрак")
