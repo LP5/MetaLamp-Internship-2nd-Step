@@ -1,0 +1,31 @@
+@mixin textField {
+  height: 67px;
+  width: 320px;
+  background: #ffffff;
+
+  form {
+    width: 320px;
+
+    label:nth-of-type(1) {
+      float: left;
+    }
+    label:nth-of-type(2) {
+      float: right;
+      color: $dark50;
+    }
+  }
+
+  input {
+    background-color: inherit;
+    border: 1px solid $dark25;
+    border-radius: 4px;
+    outline: none;
+
+    padding: 0;
+
+    height: 44px;
+    width: 100%;
+
+    transition: 0.2s;
+  }
+}

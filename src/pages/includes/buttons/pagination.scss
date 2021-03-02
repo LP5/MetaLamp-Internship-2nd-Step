@@ -1,0 +1,41 @@
+@mixin pagination {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    color: $dark50;
+    background: #fff;
+    border-radius: 22px;
+
+    height: 40px;
+    width: 40px;
+
+    &:first-of-type {
+      color: #fff;
+      background: linear-gradient($gradient-primary);
+    }
+
+    &:last-of-type {
+      color: #fff;
+      background: linear-gradient($gradient-secondary);
+    }
+
+    p {
+      color: $dark75;
+    }
+  }
+}

@@ -1,0 +1,276 @@
+@use "_vars.scss" as *;
+@use "_text.scss" as *;
+
+
+
+@mixin focus {
+  border: 1px solid $dark50;
+  border-radius: 4px;
+}
+
+@mixin dropdown {
+  height: 44px;
+  width: 320px;
+
+  border: 1px solid $dark25;
+  border-radius: 4px;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $dark50;
+  }
+}
+
+@mixin item {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+@mixin name {
+  flex: auto;
+}
+
+@mixin default {
+  display: none;
+  flex-flow: column;
+  justify-content: space-around;
+
+  background: #ffffff;
+
+  position: relative;
+}
+
+@mixin expanded {
+  display: flex;
+  filter: $drop-shadow;
+}
+
+@mixin form {
+  display: block;
+  height: max-content;
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+  }
+
+  input {
+    appearance: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+}
+
+@mixin radio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  label.radio {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    color: $dark50;
+
+    & * {
+      cursor: pointer;
+    }
+
+    .radio-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      background: #fff;
+      box-sizing: border-box;
+
+      label {
+        cursor: pointer;
+        margin-left: 2em;
+      }
+
+      input {
+        appearance: none;
+        position: absolute;
+        left: 0;
+
+        border: 1px solid $dark25;
+        border-radius: 50%;
+        outline: none;
+        margin: 0;
+
+        height: 20px;
+        width: 20px;
+
+        &:checked {
+          border: 1px solid $purple;
+          border-radius: 50%;
+
+          & ~ .control {
+            background: linear-gradient($gradient-primary);
+            position: absolute;
+            left: 4px;
+
+            border-radius: 50%;
+
+            height: 12px;
+            width: 12px;
+          }
+
+          & ~ label {
+            color: $dark75;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin toggle {
+  display: flex;
+  flex-flow: column;
+
+  div {
+    display: flex;
+    flex: row nowrap;
+    align-items: center;
+
+    margin: 5px 0;
+  }
+
+  input {
+    appearance: none;
+    position: absolute;
+    left: 0;
+
+    border: 1px solid $dark25;
+    border-radius: 10px;
+    outline: none;
+    margin: 0;
+
+    height: 20px;
+    width: 40px;
+
+    & ~ .control {
+      background: $dark25;
+      position: absolute;
+      left: 4px;
+
+      border-radius: 50%;
+
+      height: 12px;
+      width: 12px;
+    }
+
+    &:checked {
+      border: 1px solid $purple;
+
+      & ~ .control {
+        background: linear-gradient($gradient-primary);
+        transform: translateX(20px);
+      }
+    }
+
+    & ~ label {
+      color: $dark75;
+
+      margin-left: 3em;
+    }
+  }
+}
+
+@mixin like {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+  button {
+    appearance: none;
+    outline: none;
+    border: none;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background: $dark25;
+    border-radius: 10px;
+
+    margin: 0;
+
+    height: 20px;
+    width: 40px;
+
+    & div span {
+      color: $dark25;
+    }
+
+    &:active,
+    &:last-of-type {
+      background: linear-gradient($gradient-primary);
+
+      & div span {
+        color: $purple;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    div {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+
+      background: #fff;
+      border-radius: 10px;
+
+      height: 18px;
+      width: 38px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  }
+}
+
+
+
+@mixin rate {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 0;
+
+    cursor: pointer;
+
+    background: linear-gradient($gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 24px;
+  }
+}
