@@ -1,18 +1,17 @@
 @forward "../../fonts.css";
 
-@forward "mixins/_mixins.scss";
-@forward "mixins/textfield.scss";
-@forward "mixins/checkbox.scss";
-@forward "mixins/list.scss";
-@forward "mixins/buttons.scss";
-@forward "mixins/roomInfo.scss";
-@forward "mixins/pagination.scss";
-
 @forward "common/_sections.scss";
-@forward "utils/_vars.scss";
 
-@use "utils/_vars.scss";
-@use "utils/_text.scss";
+@use "utils/_vars.scss" as *;
+@use "utils/_text.scss" as *;
+
+@use "mixins/_mixins.scss" as *;
+@use "mixins/textfield.scss" as *;
+@use "mixins/checkbox.scss" as *;
+@use "mixins/list.scss" as *;
+@use "mixins/buttons.scss" as *;
+@use "mixins/roomInfo.scss" as *;
+@use "mixins/pagination.scss" as *;
 
 // @forward "../templates/colors/colors.scss";
 // @forward "../templates/text/text.scss";
@@ -29,15 +28,18 @@ body {
   h1 {
     @include widgetTitle;
   }
+
   h2 {
     @include widgetItem;
   }
+
   h3,
   label,
   legend,
   button {
     @include label;
   }
+
   p,
   pre,
   input,
@@ -54,6 +56,10 @@ body {
   height: 100%;
 
   background-color: $dark5;
+
+  .colorsAndType {
+    @include colors;
+  }
 }
 
 section {

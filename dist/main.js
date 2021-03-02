@@ -15,7 +15,7 @@
   \************************************************************************************************************/
 /***/ (() => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Undefined variable.\\n   ╷\\n28 │       background-color: $dark;\\n   │                         ^^^^^\\n   ╵\\n  src/styles/common/_sections.scss 28:25  @forward\\n  src/styles/style.scss 11:1              root stylesheet\");\n\n//# sourceURL=webpack://my-webpack-project/./src/styles/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Undefined variable.\\n  ╷\\n8 │   color: $dark;\\n  │          ^^^^^\\n  ╵\\n  src/styles/utils/_text.scss 8:10  widgetTitle()\\n  src/styles/style.scss 29:5        root stylesheet\");\n\n//# sourceURL=webpack://my-webpack-project/./src/styles/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
