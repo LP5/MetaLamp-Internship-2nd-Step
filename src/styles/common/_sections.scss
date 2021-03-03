@@ -1,16 +1,18 @@
 @use "../utils/vars" as *;
 
-@mixin colors {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  width: fit-content;
+@mixin colors-and-type {
+  height: 900px;
+  width: 100%;
 
-  .info {
-    position: relative;
-    left: 150%;
-    width: max-content;
-    margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+
+  .colors {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: fit-content;
   }
 
   .square {
@@ -47,14 +49,17 @@
     &:nth-child(7) {
       background: rgba($green, 1);
     }
+
+    .info {
+      position: relative;
+      left: 150%;
+      width: max-content;
+      margin: 0;
+    }
   }
-}
 
-.colorsAndType {
-  height: 900px;
-  width: 100%;
-
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+  .type {
+    display: block;
+    width: fit-content;
+  }
 }

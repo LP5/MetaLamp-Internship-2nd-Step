@@ -48,19 +48,14 @@ body {
   height: 100%;
 
   background-color: $dark5;
-
-  .colorsAndType {
-    @include colors;
-  }
 }
 
 section {
   background-color: #fff;
 }
 
-.type {
-  display: block;
-  width: fit-content;
+.colorsAndType {
+  @include colors-and-type;
 }
 
 .circle {

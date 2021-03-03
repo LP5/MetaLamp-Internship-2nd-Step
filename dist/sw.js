@@ -139,7 +139,7 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
     "revision": "e74a04049ac910f239e01882246b74fc"
   }, {
     "url": "main.js",
-    "revision": "78ada748106f176aaab3730befd51c89"
+    "revision": "71a2427423a739d25aac8cbb5630e7ed"
   }], {});
 
 });
