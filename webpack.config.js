@@ -84,8 +84,13 @@ module.exports = {
           // Translates CSS into CommonJS
           "css-loader",
           // Complies SASS into CSS
-          "sass-loader"
-        ]
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+            },
+          },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,

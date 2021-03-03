@@ -108,8 +108,38 @@ define("./sw.js",['./workbox-381d62a9'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
+    "url": "../../fonts/Ellipse.svg",
+    "revision": "ba186f472d1116442b7b554f004533ef"
+  }, {
+    "url": "../../fonts/MaterialIcons-Regular.eot",
+    "revision": "4c73881afe654b72a1eae428368202bd"
+  }, {
+    "url": "../../fonts/MaterialIcons-Regular.svg",
+    "revision": "a67013b29a1d4079f86303f074db8c9f"
+  }, {
+    "url": "../../fonts/MaterialIcons-Regular.ttf",
+    "revision": "a37b0c01c0baf1888ca812cc0508f6e2"
+  }, {
+    "url": "../../fonts/MaterialIcons-Regular.woff",
+    "revision": "40f1ca3d4ae7aa1758d5ae1122f3a99a"
+  }, {
+    "url": "../../fonts/Montserrat-Regular.eot",
+    "revision": "af0492c24e83e57b6b8a843d96c818af"
+  }, {
+    "url": "../../fonts/Montserrat-Regular.svg",
+    "revision": "7066b320b56bc49a45b07c5f23d9b9e4"
+  }, {
+    "url": "../../fonts/Montserrat-Regular.ttf",
+    "revision": "ee6539921d713482b8ccd4d0d23961bb"
+  }, {
+    "url": "../../fonts/Montserrat-Regular.woff",
+    "revision": "c5b3f5f9512bd455789cb18694940241"
+  }, {
+    "url": "../../fonts/Vector.svg",
+    "revision": "e74a04049ac910f239e01882246b74fc"
+  }, {
     "url": "main.js",
-    "revision": "22f3f314b895288bc25091bc1bbab78f"
+    "revision": "78ada748106f176aaab3730befd51c89"
   }], {});
 
 });

@@ -1,3 +1,5 @@
+@use "../utils/vars" as *;
+
 @mixin textField {
   height: 67px;
   width: 320px;

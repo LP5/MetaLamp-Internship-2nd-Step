@@ -1,3 +1,5 @@
+@use "../utils/vars" as *;
+
 @mixin focus {
   border: 1px solid $dark50;
   border-radius: 4px;
@@ -240,8 +242,6 @@
     }
   }
 }
-
-
 
 @mixin rate {
   display: flex;

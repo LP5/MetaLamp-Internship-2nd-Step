@@ -1,3 +1,5 @@
+@use "../utils/vars" as *;
+
 @mixin regular {
   div {
     display: flex;

@@ -1,3 +1,5 @@
+@use "../utils/vars" as *;
+
 @mixin colors {
   display: flex;
   flex-flow: column;

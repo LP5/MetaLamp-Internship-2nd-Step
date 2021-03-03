@@ -1,3 +1,5 @@
+@use "../utils/vars" as *;
+
 @mixin roomInfo {
   position: relative;
 
