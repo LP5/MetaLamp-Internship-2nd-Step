@@ -187,7 +187,10 @@
 @mixin border--gradient {
   border: 2px solid transparent;
 
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255)
+    ),
     linear-gradient($gradient-primary);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -242,7 +245,7 @@
       font-size: 10px;
     }
 
-    &.like__button--active {
+    & .like__button--active { 
       @include border--gradient;
 
       & div span {
