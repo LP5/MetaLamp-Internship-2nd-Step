@@ -1,0 +1,11 @@
+include ../buttons/like.pug
+
+mixin review(name, date)
+  .review__body
+    .review__profile-picture
+      img
+      +like
+    .review__info
+      p.review__text__name= name
+      span.review__text__date= date
+      p.review__text__review Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
