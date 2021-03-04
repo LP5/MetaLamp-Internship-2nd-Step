@@ -97,6 +97,9 @@ html
       include includes/buttons/radio.pug
       include includes/buttons/toggle.pug
       include includes/buttons/like.pug
+      +form("Like Buttons")
+        +like(2)
+        +like--active(12)
       include includes/buttons/rate.pug
       include includes/buttons/range.pug
       +form("Buttons")(class="regular")

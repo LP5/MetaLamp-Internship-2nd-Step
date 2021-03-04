@@ -9,3 +9,18 @@ form.buttons
       div
         span.material-icons favorite
         span 12
+
+mixin like(n)
+  .like
+    button(type="button")
+      div
+        span.material-icons favorite_border
+        span= n
+
+mixin like--active(n)
+  .like
+    button(type="button")
+      div
+        span.material-icons favorite
+        span= n
+    
