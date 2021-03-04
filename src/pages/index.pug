@@ -9,6 +9,7 @@ html
     include includes/buttons/buttons.pug
     include includes/list/list.pug
     include includes/textfield/textfield.pug
+    include includes/buttons/like.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -96,8 +97,8 @@ html
         +checkbox("Можно пригласить гостей (до 10 человек)")
       include includes/buttons/radio.pug
       include includes/buttons/toggle.pug
-      include includes/buttons/like.pug
-      +form("Like Buttons")
+
+      +form("Like Buttons")(class="like")
         +like(2)
         +like--active(12)
       include includes/buttons/rate.pug

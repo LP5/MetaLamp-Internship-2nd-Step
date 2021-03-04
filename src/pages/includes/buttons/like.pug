@@ -1,25 +1,13 @@
-form.buttons
-  fieldset.like
-    legend Like Button
-    button(type="button")
-      div
-        span.material-icons favorite_border
-        span 2
-    button(type="button")
-      div
-        span.material-icons favorite
-        span 12
-
 mixin like(n)
   .like
-    button(type="button")
+    button(type="button").like__button
       div
         span.material-icons favorite_border
         span= n
 
 mixin like--active(n)
-  .like
-    button(type="button")
+  .like.like--active
+    button(type="button").like__button.like__button--active
       div
         span.material-icons favorite
         span= n
