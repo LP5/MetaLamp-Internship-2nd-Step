@@ -119,43 +119,43 @@ section {
 form {
   @include form;
 
-  .checkbox {
-    @include checkbox;
-  }
-
-  .radio {
-    @include radio;
-  }
-
-  .toggle {
-    @include toggle;
-  }
-
-  .like {
-    @include like;
-  }
-
-  .regular {
-    @include regular;
-  }
-
-  .rate {
-    @include rate;
-  }
-
-  .pagination {
-    @include pagination;
-  }
-
-  .list {
-    @include list;
-  }
-
   label {
     @include body;
     color: $dark50;
     text-transform: none;
   }
+}
+
+.checkbox {
+  @include checkbox;
+}
+
+.radio {
+  @include radio;
+}
+
+.toggle {
+  @include toggle;
+}
+
+.like {
+  @include like;
+}
+
+.regular {
+  @include regular;
+}
+
+.rate {
+  @include rate;
+}
+
+.pagination {
+  @include pagination;
+}
+
+.list {
+  @include list;
 }
 
 .roomInfo {

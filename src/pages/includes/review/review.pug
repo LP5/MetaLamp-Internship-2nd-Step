@@ -3,8 +3,8 @@ include ../buttons/like.pug
 mixin review(name, date)
   .review__body
     .review__profile-picture
-      img
-      +like
+      img(src="../src/static/review1.png")
+      +like--active(12)
     .review__info
       p.review__text__name= name
       span.review__text__date= date
