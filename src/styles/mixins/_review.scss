@@ -1,0 +1,17 @@
+@mixin review {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  .review_profile-picture {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .review__info {
+    & .review__text__name {
+      font-weight: bold;
+    }
+  }
+}
