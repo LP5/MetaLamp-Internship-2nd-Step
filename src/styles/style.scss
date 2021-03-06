@@ -161,3 +161,7 @@ form {
 .roomInfo {
   @include roomInfo;
 }
+
+.review__body {
+  @include review;
+}
