@@ -86,7 +86,7 @@ section {
   }
 }
 
-.textField:nth-of-type(2) {
+.textField#textfield--active {
   input {
     @include focus;
   }
