@@ -90,6 +90,8 @@
       box-sizing: border-box;
 
       label {
+        @include body;
+        color: $dark50;
         cursor: pointer;
         margin-left: 2em;
       }
@@ -177,7 +179,7 @@
     }
 
     & ~ label {
-      color: $dark75;
+      @include body;
 
       margin-left: 3em;
     }

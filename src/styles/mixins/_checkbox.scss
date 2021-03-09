@@ -3,6 +3,10 @@
 @mixin checkbox {
   display: block;
 
+  & label {
+    @include body;
+  }
+
   & .wrapper {
     display: flex;
     flex-flow: row nowrap;

@@ -77,9 +77,7 @@ section {
 
 .textField {
   @include textField;
-  @include label;
   input {
-    @include body;
     &:hover,
     &:focus,
     &:active {
@@ -118,12 +116,6 @@ section {
 
 form {
   @include form;
-
-  label {
-    @include body;
-    color: $dark50;
-    text-transform: none;
-  }
 }
 
 .checkbox {

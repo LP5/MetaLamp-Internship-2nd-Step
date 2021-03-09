@@ -43,23 +43,12 @@ html
         p.info Body/Paragprah (This is the body text which is used for most of the design, like paragraphs, lists, etc.)
     h1 Form Elements
     section.formElements
-      div.textField
-        form
-          label(for="textField") Text Field
-          label(for="textField") Default
-          br
-          input(id="textField" placeholder="Email")
-      div.textField
-        form
-          label(for="textField") Text Field
-          label(for="textField") Hover / Focus
-          br
-          input(id="textField" value="This is pretty awesome")
-      div.textField
-        form
-          label(for="textField") Masked Text Field
-          br
-          input(id="textField")
+      +form("Default")(class="textField")
+        +text-field("Text Field")(placeholder="Email")
+      +form("Hover / Focus")(class="textField")
+        +text-field("Text Field")(value="This is pretty awesome")
+      +form()(class="textField")
+        +text-field("Masked Text Field")
       div(id="dropdown")
         h3 Dropdown
         div(class="dropdown" onclick="dropdownJS()")
@@ -86,19 +75,12 @@ html
               span.count(id="amount") 0
               div.circle.increase
                 p +
-      +form("Text Field")(class="textField")
-        +text-field("Default")
-      +form("Text Field")(class="textField")
-        +text-field("Hover / Focus")
-      +form("Masked Text Field")(class="textField")
-        +text-field()
       +form("Checkbox Buttons")(class="checkbox")
         +checkbox("Можно курить")
         +checkbox("Можно с питомцами")
         +checkbox("Можно пригласить гостей (до 10 человек)")
       include includes/buttons/radio.pug
       include includes/buttons/toggle.pug
-
       +form("Like Buttons")(class="like")
         +like(2)
         +like--active(12)
