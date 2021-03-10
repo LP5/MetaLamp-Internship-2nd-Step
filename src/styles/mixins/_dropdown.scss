@@ -1,0 +1,21 @@
+@use "../utils/vars" as *;
+@use "../mixin/mixins" as *;
+
+@mixin dropdown {
+  .dropdown__item__body {
+
+    .dropdown__item {
+      @include body;
+    }
+    .dropdown__item__counter {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+
+      & button {
+        border: 1px solid $dark25;
+        border-radius: 22px;
+      }
+    }
+  }
+}
