@@ -21,13 +21,16 @@
   justify-content: space-around;
 
   background: #ffffff;
-
-  position: relative;
 }
 
 @mixin expanded {
+  position: absolute;
+  top: 100%;
+
   display: flex;
   filter: $drop-shadow;
+
+  width: inherit;
 }
 
 @mixin form {

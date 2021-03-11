@@ -1,12 +1,14 @@
 @use "../utils/vars" as *;
 
 @mixin dropdown {
-  height: 44px;
-  width: 320px;
+  position: relative;
 
   border: 1px solid $dark25;
   border-radius: 4px;
   transition: 0.2s;
+
+  height: 44px;
+  width: 320px;
 
   &:hover,
   &:focus {
@@ -27,8 +29,11 @@
       align-content: center;
 
       button {
+        background: #fff;
         border: 1px solid $dark25;
         border-radius: 22px;
+
+        color: $dark25;
       }
     }
   }
