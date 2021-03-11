@@ -3,6 +3,35 @@
   <head>
     <!-- link(href='../styles/styles.scss' rel='stylesheet' type='text/css')-->
     <script src="../src/scripts/dropdown.js"></script>
+    <!-- -
+    div(id="dropdown")
+      h3 Dropdown
+      div(class="dropdown" onclick="dropdownJS()")
+        p Спальни
+        div(class="default" id="dropdownJS")
+          div.item
+            span.name Спальни
+            div.circle.decrease
+              p -
+            span.count(id="amount") 0
+            div.circle.increase
+              p +
+          div.item
+            span.name Кровати
+            div.circle.decrease
+              p -
+            span.count(id="amount") 0
+            div.circle.increase
+              p +
+          div.item
+            span.name Ванные комнаты
+            div.circle.decrease
+              p -
+            span.count(id="amount") 0
+            div.circle.increase
+              p +
+    
+    -->
   </head>
   <body>
     <h1>Colors & Type</h1>
@@ -67,38 +96,22 @@
                   <input id="text-field">
             </fieldset>
           </form>
-      <div id="dropdown">
-        <h3>Dropdown</h3>
-        <div class="dropdown" onclick="dropdownJS()">
-          <p>Спальни</p>
-          <div class="default" id="dropdownJS">
-            <div class="item"><span class="name">Спальни</span>
-              <div class="circle decrease">
-                <p>-</p>
-              </div><span class="count" id="amount">0</span>
-              <div class="circle increase">
-                <p>+</p>
-              </div>
-            </div>
-            <div class="item"><span class="name">Кровати</span>
-              <div class="circle decrease">
-                <p>-</p>
-              </div><span class="count" id="amount">0</span>
-              <div class="circle increase">
-                <p>+</p>
-              </div>
-            </div>
-            <div class="item"><span class="name">Ванные комнаты</span>
-              <div class="circle decrease">
-                <p>-</p>
-              </div><span class="count" id="amount">0</span>
-              <div class="circle increase">
-                <p>+</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <form>
+            <fieldset>
+              <legend>Dropdown</legend>
+                  <div class="dropdown" onclick="dropdownJS()">
+                    <p>Спальни</p>
+                    <div class="default" id="dropdownJS">
+                          <div class="dropdown__item__body"><span class="dropdown__item">Спальни</span>
+                            <div class="dropdown__item__counter">
+                              <button type="button">-</button><span class="count" id="amount">0</span>
+                              <button type="button">+</button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </fieldset>
+          </form>
           <form>
             <fieldset class="checkbox">
               <legend>Checkbox Buttons</legend>

@@ -1,8 +1,22 @@
 @use "../utils/vars" as *;
-@use "../mixin/mixins" as *;
 
 @mixin dropdown {
+  height: 44px;
+  width: 320px;
+
+  border: 1px solid $dark25;
+  border-radius: 4px;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $dark50;
+  }
   .dropdown__item__body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 
     .dropdown__item {
       @include body;
@@ -12,7 +26,7 @@
       flex-flow: row nowrap;
       align-content: center;
 
-      & button {
+      button {
         border: 1px solid $dark25;
         border-radius: 22px;
       }

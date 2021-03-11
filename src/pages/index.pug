@@ -11,7 +11,7 @@ html
     include includes/textfield/textfield.pug
     include includes/buttons/like.pug
     include includes/review/review.pug
-    include incudes/dropdown/dropdown.pug
+    include includes/dropdown/dropdown.pug
   body
     h1 Colors & Type
     section.colorsAndType
@@ -50,33 +50,8 @@ html
         +text-field("Text Field")(value="This is pretty awesome")
       +form()(class="textField")
         +text-field("Masked Text Field")
-      div(id="dropdown")
-        h3 Dropdown
-        div(class="dropdown" onclick="dropdownJS()")
-          p Спальни
-          div(class="default" id="dropdownJS")
-            div.item
-              span.name Спальни
-              div.circle.decrease
-                p -
-              span.count(id="amount") 0
-              div.circle.increase
-                p +
-            div.item
-              span.name Кровати
-              div.circle.decrease
-                p -
-              span.count(id="amount") 0
-              div.circle.increase
-                p +
-            div.item
-              span.name Ванные комнаты
-              div.circle.decrease
-                p -
-              span.count(id="amount") 0
-              div.circle.increase
-                p +
-      +form("Dropdown")(class="dropdown")
+
+      +form("Dropdown")
         +dropdown
           +dropdown__item__body("Спальни")
       +form("Checkbox Buttons")(class="checkbox")
