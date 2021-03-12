@@ -178,11 +178,12 @@
     border: none;
 
     display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
 
-    background: $dark25;
+    background: #fff;
+    border: 2px solid $dark25;
     border-radius: 10px;
 
     margin: 0;
@@ -190,25 +191,12 @@
     height: 20px;
     width: 40px;
 
-    & div span {
+    & span {
       color: $dark25;
     }
 
     &:hover {
       cursor: pointer;
-    }
-
-    div {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
-      align-items: center;
-
-      background: #fff;
-      border-radius: 10px;
-
-      height: 18px;
-      width: 38px;
     }
 
     span {
@@ -218,7 +206,7 @@
     &.like__button--active {
       @include border--gradient;
 
-      & div span {
+      & span {
         color: $purple;
       }
     }
