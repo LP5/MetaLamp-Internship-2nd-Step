@@ -1,31 +1,3 @@
-// -
-  div(id="dropdown")
-    h3 Dropdown
-    div(class="dropdown" onclick="dropdownJS()")
-      p Спальни
-      div(class="default" id="dropdownJS")
-        div.item
-          span.name Спальни
-          div.circle.decrease
-            p -
-          span.count(id="amount") 0
-          div.circle.increase
-            p +
-        div.item
-          span.name Кровати
-          div.circle.decrease
-            p -
-          span.count(id="amount") 0
-          div.circle.increase
-            p +
-        div.item
-          span.name Ванные комнаты
-          div.circle.decrease
-            p -
-          span.count(id="amount") 0
-          div.circle.increase
-            p +
-
 mixin dropdown
   div(class="dropdown" onclick="dropdownJS()")
     p Спальни
