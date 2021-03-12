@@ -10,6 +10,26 @@
   height: 44px;
   width: 320px;
 
+  .default {
+    display: none;
+    flex-flow: column;
+    justify-content: space-around;
+
+    background: #ffffff;
+  }
+
+  .expanded {
+    position: absolute;
+    top: 100%;
+
+    display: flex;
+    border: 1px solid $dark50;
+    border-radius: 4px;
+    filter: $drop-shadow;
+
+    width: inherit;
+  }
+
   &:hover,
   &:focus {
     border: 1px solid $dark50;

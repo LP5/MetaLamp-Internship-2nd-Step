@@ -15,24 +15,6 @@
   flex: auto;
 }
 
-@mixin default {
-  display: none;
-  flex-flow: column;
-  justify-content: space-around;
-
-  background: #ffffff;
-}
-
-@mixin expanded {
-  position: absolute;
-  top: 100%;
-
-  display: flex;
-  filter: $drop-shadow;
-
-  width: inherit;
-}
-
 @mixin form {
   display: block;
   height: max-content;

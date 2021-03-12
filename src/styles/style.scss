@@ -94,15 +94,6 @@ section {
 
 .dropdown {
   @include dropdown;
-
-  .default {
-    @include default;
-  }
-  .expanded {
-    @include expanded;
-    border: 1px solid $dark50;
-    border-radius: 4px;
-  }
 }
 
 .rate {
