@@ -55,6 +55,8 @@
   }
 
   &.checkbox--collapsed {
-    display: none;
+    .wrapper {
+      display: none;
+    }
   }
 }
