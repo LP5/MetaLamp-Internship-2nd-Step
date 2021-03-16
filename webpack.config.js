@@ -20,6 +20,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrettierPlugin = require("prettier-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const IMask = require("imask");
 
 
 /*

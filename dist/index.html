@@ -1,15 +1,314 @@
-Html Webpack Plugin:
-<pre>
-  Error: The loader "/home/ivan/coding/MetaLamp-Internship-2nd-Step/node_modules/html-webpack-plugin/lib/loader.js!/home/ivan/coding/MetaLamp-Internship-2nd-Step/src/pages/index.pug" didn't   return html.
-  
-  - index.js:336 HtmlWebpackPlugin.evaluateCompilationResult
-    [MetaLamp-Internship-2nd-Step]/[html-webpack-plugin]/index.js:336:24
-  
-  - index.js:243 
-    [MetaLamp-Internship-2nd-Step]/[html-webpack-plugin]/index.js:243:22
-  
-  - async Promise.all
-  
-  - async Promise.all
-  
-</pre>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- link(href='../styles/styles.scss' rel='stylesheet' type='text/css')-->
+    <script src="../src/scripts/dropdown.js"></script>
+    <script src="../src/scripts/inputMask.js"></script>
+  </head>
+  <body>
+    <h1>Colors & Type</h1>
+    <section class="colorsAndType">
+      <div class="colors">
+        <div class="square">
+          <h2 class="info">Dark Shade 100%</h2>
+          <p class="info">#1F2041</p>
+        </div>
+        <div class="square">
+          <h2 class="info">Dark Shade 75%</h2>
+          <p class="info">#1F2041</p>
+        </div>
+        <div class="square">
+          <h2 class="info">Dark Shade 50%</h2>
+          <p class="info">#1F2041</p>
+        </div>
+        <div class="square">
+          <h2 class="info">Dark Shade 25%</h2>
+          <p class="info">#1F2041</p>
+        </div>
+        <div class="square">
+          <h2 class="info">Dark Shade 5%</h2>
+          <p class="info">#1F2041</p>
+        </div>
+        <div class="square">
+          <h2 class="info">Purple</h2>
+          <p class="info">#BC9CFF</p>
+        </div>
+        <div class="square">
+          <h2 class="info">Green</h2>
+          <p class="info">#6FCf97</p>
+        </div>
+      </div>
+      <div class="type">
+        <h1>Header 1 (This one is the sub-section or widget title)</h1>
+        <h2 class="info">Header 2 (Next one is the item title inside widgets)</h2>
+        <h3>Header 3 (This is a label or CTA text)</h3>
+        <p class="info">Body/Paragprah (This is the body text which is used for most of the design, like paragraphs, lists, etc.)</p>
+      </div>
+    </section>
+    <h1>Form Elements</h1>
+    <section class="formElements">
+          <form>
+            <fieldset class="textField">
+              <legend>Default</legend>
+                  <label for="text-field">Text Field</label>
+                  <input id="text-field" placeholder="Email">
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="textField" id="textfield--active">
+              <legend>Hover / Focus</legend>
+                  <label for="text-field">Text Field</label>
+                  <input id="text-field" value="This is pretty awesome">
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="textField">
+              <legend></legend>
+                  <label for="text-field">Masked Text Field</label>
+                  <input id="masked" placeholder="ДД.ММ.ГГГГ">
+            </fieldset>
+          </form>
+          <form>
+            <fieldset>
+              <legend>Dropdown</legend>
+                  <div class="dropdown" onclick="dropdownJS()">
+                    <p>Спальни</p>
+                    <div class="default" id="dropdownJS">
+                          <div class="dropdown__item__body"><span class="dropdown__item">Спальни</span>
+                            <div class="dropdown__item__counter">
+                              <button type="button">-</button><span class="count" id="amount">0</span>
+                              <button type="button">+</button>
+                            </div>
+                          </div>
+                          <div class="dropdown__item__body"><span class="dropdown__item">Кровати</span>
+                            <div class="dropdown__item__counter">
+                              <button type="button">-</button><span class="count" id="amount">0</span>
+                              <button type="button">+</button>
+                            </div>
+                          </div>
+                          <div class="dropdown__item__body"><span class="dropdown__item">Ванные комнаты</span>
+                            <div class="dropdown__item__counter">
+                              <button type="button">-</button><span class="count" id="amount">0</span>
+                              <button type="button">+</button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="checkbox">
+              <legend>Checkbox Buttons</legend>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Можно курить</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Можно с питомцами</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Можно пригласить гостей (до 10 человек)</label>
+                  </div>
+            </fieldset>
+          </form>
+<form class="buttons">
+  <fieldset>
+    <legend>Radio Buttons</legend>
+    <div class="radio">
+      <label class="radio" for="male"><span class="radio-input">
+          <input type="radio" id="male" name="gender"><span class="control"></span>
+          <label for="male">Мужчина</label></span></label>
+      <label class="radio" for="female"> <span class="radio-input">
+          <input type="radio" id="female" name="gender"><span class="control"></span>
+          <label for="female">Женщина</label></span></label>
+    </div>
+  </fieldset>
+</form>
+<form class="buttons">
+  <fieldset>
+    <legend>Toggle</legend>
+    <div class="toggle">
+      <div>
+        <input type="checkbox" id="toggle"><span class="control"></span>
+        <label class="toggle" for="toggle">Получать спецпредложения</label>
+      </div>
+      <div>
+        <input type="checkbox" id="toggle"><span class="control"></span>
+        <label class="toggle" for="toggle">Получать спецпредложения</label>
+      </div>
+    </div>
+  </fieldset>
+</form>
+          <form>
+            <fieldset class="like">
+              <legend>Like Buttons</legend>
+                  <div class="like">
+                    <button class="like__button" type="button"><span class="material-icons">favorite_border</span><span>2</span></button>
+                  </div>
+                  <div class="like like--active">
+                    <button class="like__button like__button--active" type="button"><span class="material-icons">favorite</span><span>12</span></button>
+                  </div>
+            </fieldset>
+          </form>
+<form class="buttons">
+  <fieldset class="rate">
+    <legend>Rate Button</legend>
+    <div>
+      <button class="material-icons" type="button">star</button>
+      <button class="material-icons" type="button">star</button>
+      <button class="material-icons" type="button">star</button>
+      <button class="material-icons" type="button">star</button>
+      <button class="material-icons" type="button">star_border</button>
+    </div>
+    <div>
+      <button class="material-icons" type="button">star_rate</button>
+      <button class="material-icons" type="button">star_rate</button>
+      <button class="material-icons" type="button">star_rate</button>
+      <button class="material-icons" type="button">star_rate</button>
+      <button class="material-icons" type="button">star_rate</button>
+    </div>
+  </fieldset>
+</form>
+          <form>
+            <fieldset class="regular">
+              <legend>Buttons</legend>
+              <div>
+                    <button class="filled" type="button">Click Me</button>
+                    <button class="filled" type="button" disabled>Click Me</button>
+              </div>
+              <div>
+                    <button class="unfilled" type="button">Click Me</button>
+                    <button class="unfilled" type="button" disabled>Click Me</button>
+              </div>
+              <div>
+                    <button class="simple" type="button">Click Me</button>
+                    <button class="simple" type="button" disabled>Click Me</button>
+              </div>
+                  <button class="wide" type="button">Перейти к оплате<span class="material-icons">arrow_forward</span></button>
+            </fieldset>
+          </form>
+<form class="buttons">
+  <fieldset class="pagination">
+    <legend>Pagination</legend>
+    <div>
+      <button type="button">1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button type="button">...</button>
+      <button type="button">15</button>
+      <button class="material-icons" type="button">arrow_forward</button>
+    </div>
+    <p>1 – 12 из 100+ вариантов аренды</p>
+  </fieldset>
+</form>
+          <form>
+            <fieldset class="checkbox checkbox--collapsed" id="expandable">
+              <legend>Expandable Checkbox List</legend>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Завтрак</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Письменный стол</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Стул для кормления</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Кроватка</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Телевизор</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Шампунь</label>
+                  </div>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="checkbox" id="expandable">
+              <legend>Expandable Checkbox List</legend>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Завтрак</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Письменный стол</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Стул для кормления</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Кроватка</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Телевизор</label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Шампунь</label>
+                  </div>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="checkbox checkbox--rich">
+              <legend>Rich Checkbox Buttons</legend>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox"><span>Широкий коридор</span><span>Ширина коридоров в номере не менее 91 см.</span></label>
+                  </div>
+                  <div class="wrapper">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox"><span>Помощник для инвалидов</span><span>На 1 этаже вас встретит специалист  и проводит до номера.</span></label>
+                  </div>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset class="list">
+              <legend>Bullet List</legend>
+                  <ul>
+                    <li>Нельзя с питомцами</li>
+                    <li>Без вечеринок и мероприятий</li>
+                    <li>Время прибытия — после 13:00, а выезд до 12:00</li>
+                  </ul>
+            </fieldset>
+          </form>
+          <div class="roomInfo"><span class="material-icons">insert_emoticon</span>
+            <div class="roomInfo-text">
+              <p>Комфорт</p>
+              <p>Шумопоглощающие стены</p>
+            </div>
+            <hr>
+          </div>
+          <div class="roomInfo"><span class="material-icons">location_city</span>
+            <div class="roomInfo-text">
+              <p>Удобство</p>
+              <p>Окно в каждой из спален</p>
+            </div>
+            <hr>
+          </div>
+          <div class="review__body">
+            <div class="review__profile-picture"><img src="../src/static/review1.png">
+                  <div class="like like--active">
+                    <button class="like__button like__button--active" type="button"><span class="material-icons">favorite</span><span>12</span></button>
+                  </div>
+            </div>
+            <div class="review__info">
+              <p class="review__text__name">Мурад Сарафанов</p><span class="review__text__date">5 дней назад</span>
+              <p class="review__text__review">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+            </div>
+          </div>
+    </section>
+  <script src="vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_getU-0d3586.js"></script><script src="main.js"></script></body>
+</html>

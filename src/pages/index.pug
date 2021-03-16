@@ -3,6 +3,7 @@ html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
     script(src="../src/scripts/dropdown.js")
+    script(src="../src/scripts/inputMask.js")
     include includes/mixins.pug
     include includes/roomInfo/roomInfo.pug
     include includes/checkbox/checkbox.pug
@@ -49,8 +50,7 @@ html
       +form("Hover / Focus")(class="textField", id="textfield--active")
         +text-field("Text Field")(value="This is pretty awesome")
       +form()(class="textField")
-        +text-field("Masked Text Field")
-
+        +text-field("Masked Text Field")(id="masked" placeholder="ДД.ММ.ГГГГ")
       +form("Dropdown")
         +dropdown
           +dropdown__item__body("Спальни")
