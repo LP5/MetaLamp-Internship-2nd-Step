@@ -15,6 +15,7 @@ window.onload=function () {
         from: 1,
         to: 12,
         maxLength: 2,
+
       },
       Y: {
         mask: IMask.MaskedRange,
@@ -32,6 +33,8 @@ window.onload=function () {
       if (month < 10) month = "0" + month;
 
       return [day, month, year].join(".");
-    }
+    },
+
+    autofix: true
   })
 };
