@@ -10,13 +10,15 @@ function checkboxExpand(event) {
   parent.classList.toggle("checkbox--collapsed");
 }
 
-var dropdown = document.querySelectorAll("div.dropdown");
+var dropdown = document.querySelectorAll("fieldset.dropdown");
 
 dropdown.forEach(
   function(e) {
-    e.addEventListener("click", function() {
-      this.querySelector(".dropdown--default").removeEventListener("click", this);
-      this.querySelector(".dropdown--default").classList.toggle("dropdown--expanded");
+    e.querySelector("div.dropdown").addEventListener("click", function() {
+      dropdown.forEach(
+        function(i) {
+          i.querySelector(".dropdown--default").classList.toggle("dropdown--expanded");
+        });
     });
   }
 );

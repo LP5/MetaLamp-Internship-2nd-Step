@@ -1,15 +1,15 @@
 @use "../utils/vars" as *;
 
 @mixin dropdown {
-  .dropdown {
-    position: relative;
+  width: 320px;
 
+  .dropdown {
     border: 1px solid $dark25;
     border-radius: 4px;
     transition: 0.2s;
 
     height: 44px;
-    width: 320px;
+    width: inherit;
 
     &:hover,
     &:focus {
@@ -19,21 +19,18 @@
 
   .dropdown--default {
     display: none;
-    flex-flow: column;
-    justify-content: space-around;
-
-    background: #ffff;
   }
 
   .dropdown--expanded {
-    position: absolute;
-    top: 100%;
-
     display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
     border: 1px solid $dark50;
     border-radius: 4px;
     filter: $drop-shadow;
 
+    height: inherit;
     width: inherit;
   }
 
