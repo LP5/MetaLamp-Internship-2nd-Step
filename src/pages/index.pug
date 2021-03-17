@@ -2,8 +2,6 @@ doctype html
 html
   head
     // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
-    script(src="../src/scripts/dropdown.js")
-    script(src="../src/scripts/inputMask.js")
     include includes/mixins.pug
     include includes/roomInfo/roomInfo.pug
     include includes/checkbox/checkbox.pug
@@ -101,3 +99,5 @@ html
       +roomInfo("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
       +roomInfo("location_city", "Удобство", "Окно в каждой из спален")
       +review("Мурад Сарафанов", "5 дней назад")
+      script(src="../src/scripts/dropdown.js")
+      script(src="../src/scripts/inputMask.js")
