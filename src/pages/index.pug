@@ -1,7 +1,6 @@
 doctype html
 html
   head
-    // link(href='../styles/styles.scss' rel='stylesheet' type='text/css')
     include includes/mixins.pug
     include includes/roomInfo/roomInfo.pug
     include includes/checkbox/checkbox.pug
@@ -49,7 +48,7 @@ html
         +text-field("Text Field")(value="This is pretty awesome")
       +form()(class="textField")
         +text-field("Masked Text Field")(id="masked" placeholder="ДД.ММ.ГГГГ")
-      +form("Dropdown")
+      +form("Dropdown")(class="dropdown")
         +dropdown
           +dropdown__item__body("Спальни")
           +dropdown__item__body("Кровати")
@@ -99,5 +98,6 @@ html
       +roomInfo("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
       +roomInfo("location_city", "Удобство", "Окно в каждой из спален")
       +review("Мурад Сарафанов", "5 дней назад")
+
       script(src="../src/scripts/dropdown.js")
       script(src="../src/scripts/inputMask.js")

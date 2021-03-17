@@ -1,24 +1,31 @@
 @use "../utils/vars" as *;
 
 @mixin dropdown {
-  position: relative;
+  .dropdown {
+    position: relative;
 
-  border: 1px solid $dark25;
-  border-radius: 4px;
-  transition: 0.2s;
+    border: 1px solid $dark25;
+    border-radius: 4px;
+    transition: 0.2s;
 
-  height: 44px;
-  width: 320px;
+    height: 44px;
+    width: 320px;
 
-  .default {
+    &:hover,
+    &:focus {
+      border: 1px solid $dark50;
+    }
+  }
+
+  .dropdown--default {
     display: none;
     flex-flow: column;
     justify-content: space-around;
 
-    background: #ffffff;
+    background: #ffff;
   }
 
-  .expanded {
+  .dropdown--expanded {
     position: absolute;
     top: 100%;
 
@@ -30,11 +37,6 @@
     width: inherit;
   }
 
-  &:hover,
-  &:focus {
-    border: 1px solid $dark50;
-  }
-
   .dropdown__item__body {
     display: flex;
     flex-flow: row nowrap;
@@ -44,6 +46,7 @@
     .dropdown__item {
       @include body;
     }
+
     .dropdown__item__counter {
       display: flex;
       flex-flow: row nowrap;
