@@ -8,12 +8,31 @@
     border-radius: 4px;
     transition: 0.2s;
 
-    height: 44px;
     width: inherit;
 
     &:hover,
     &:focus {
       border: 1px solid $dark50;
+    }
+
+    & > button {
+      @include body;
+
+      appearance: none;
+
+      background: #fff;
+      border: none;
+      color: $dark75;
+      outline: none;
+      padding: none;
+      text-align: left;
+
+      height: 44px;
+      width: inherit;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -26,12 +45,8 @@
     flex-flow: column;
     justify-content: space-around;
 
-    border: 1px solid $dark50;
-    border-radius: 4px;
+    border-top: 1px solid $dark25;
     filter: $drop-shadow;
-
-    height: inherit;
-    width: inherit;
   }
 
   .dropdown__item__body {
@@ -41,7 +56,7 @@
     align-items: center;
 
     .dropdown__item {
-      @include body;
+      @include label;
     }
 
     .dropdown__item__counter {
@@ -54,7 +69,13 @@
         border: 1px solid $dark25;
         border-radius: 22px;
 
-        color: $dark25;
+        color: $dark50;
+
+        font-size: 18px;
+        font-weight: normal;
+
+        height: 30px;
+        width: 30px;
       }
     }
   }

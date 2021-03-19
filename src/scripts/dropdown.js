@@ -14,7 +14,7 @@ var dropdown = document.querySelectorAll("fieldset.dropdown");
 
 dropdown.forEach(
   function(e) {
-    e.querySelector("div.dropdown").addEventListener("click", function() {
+    e.querySelector("button").addEventListener("click", function() {
       dropdown.forEach(
         function(i) {
           i.querySelector(".dropdown--default").classList.toggle("dropdown--expanded");
