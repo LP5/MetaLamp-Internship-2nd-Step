@@ -1,10 +1,13 @@
-# Второй этап стажировки MetaLamp (бывш. FSD, Fullstack Development)
-## Создание макета и практика грамотной верстки
+# WIP - Hotel Room Search & Booking Service
+## A frontend mockup
 
-**Ссылки на страницы проекта:**
-* [Макет проекта (UI-Kit)](https://lp5.github.io/MetaLamp-Internship-2nd-Step/dist/index.html)
+This is a frontend learning project where I practice HTML & CSS, learn and implement JavaScript and some popular frontend technologies (see Stack).
 
-**Стек технологий:**
-* Webpack - сборщик модулей
-* Pug - шаблонизатор HTML
-* SCSS - препроцессор CSS
+**Project Pages:**
+* [Project mockup (UI Kit)](https://lp5.github.io/toxin/dist/index.html)
+
+**Stack:**
+* Webpack - module bundler
+* Pug - HTML template engine
+* Sass - CSS extension (I use SCSS syntax)
+* JavaScript - a scripting language
