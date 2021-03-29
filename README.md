@@ -10,4 +10,4 @@ This is a frontend learning project where I practice HTML & CSS, learn and imple
 * Webpack - module bundler
 * Pug - HTML template engine
 * Sass - CSS extension (I use SCSS syntax)
-* JavaScript - a scripting language
+* JavaScript
