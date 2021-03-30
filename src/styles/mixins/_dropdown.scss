@@ -13,6 +13,10 @@
     &:hover,
     &:focus {
       border: 1px solid $dark50;
+
+      & .dropdown--expanded {
+        border-top: 1px solid $dark50;
+      }
     }
 
     & > button {
@@ -21,6 +25,7 @@
       appearance: none;
 
       background: #fff;
+      border-radius: inherit;
       border: none;
       color: $dark75;
       outline: none;
@@ -44,18 +49,19 @@
     display: flex;
     flex-flow: column;
     justify-content: space-around;
+    transition: 0.2s;
 
     border-top: 1px solid $dark25;
     filter: $drop-shadow;
   }
 
-  .dropdown__item__body {
+  .dropdown__item {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    .dropdown__item {
+    .dropdown__item__name {
       @include label;
     }
 

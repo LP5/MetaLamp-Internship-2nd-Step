@@ -4,9 +4,9 @@ mixin dropdown
     .dropdown--default(id="dropdownJS")
       block
 
-mixin dropdown__item__body(dropdown__item)
-  .dropdown__item__body
-    span.dropdown__item= dropdown__item
+mixin dropdown__item(dropdown__item__name)
+  .dropdown__item
+    span.dropdown__item__name= dropdown__item__name
     .dropdown__item__counter
       button(type="button") -
       span.count(id="amount") 0
